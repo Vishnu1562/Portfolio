@@ -185,10 +185,15 @@ A high-performance, responsive single-page portfolio application that showcases 
 ---
 
 ## Implementation Notes
-* Framework: Angular 19+ (Standalone components, Signals, Reactive forms, OnPush change detection).
+* Framework: Angular 22 (Standalone components, Signals, Reactive forms, OnPush change detection).
+* State Management: `@ngrx/signals` (`signalStore`) managing portfolio data, skill category filtering, and UI modal/navigation state.
+* Architecture: Clean Architecture modular structure:
+  - `core/models/`: `skill.model.ts`, `project.model.ts`, `experience.model.ts`, `contact.model.ts`
+  - `state/`: `portfolio.store.ts` (NgRx SignalStore)
+  - `components/`: `header/`, `hero/`, `experience/`, `skills/`, `projects/`, `contact/`, `resume-modal/`, `footer/`
+  - `app.ts` / `app.html`: Root composition orchestrator
 * Styling: Tailwind CSS configured with custom enterprise dark palette (`slate-950`, `cyan-400`, `indigo-500`, etc.).
-* Icons: Lucide / SVG inline icons for Angular to avoid external heavy icon font dependencies.
-* Unit / Integration Tests: Jasmine + Karma / Vitest / Angular Testbed covering navigation, filtering, project display, and contact form validation.
+* Unit / Integration Tests: Vitest + Angular Testbed covering end-to-end integration across all section components, the NgRx signalStore, and form validation.
 
 ---
 

@@ -1,0 +1,55 @@
+@if (store.resumeModalOpen()) {
+  <div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md">
+    <div class="glass-card max-w-lg w-full rounded-2xl p-6 sm:p-8 border border-slate-700 shadow-2xl relative">
+      <button
+        type="button"
+        (click)="store.closeResumeModal()"
+        class="absolute top-4 right-4 text-slate-400 hover:text-white p-1 rounded-lg hover:bg-slate-800"
+      >
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+
+      <div class="flex items-center gap-3 mb-4">
+        <div class="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-cyan-400">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+          </svg>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold text-white">Curriculum Vitae</h3>
+          <p class="text-xs text-slate-400">{{ store.personalInfo().name }} &bull; {{ store.personalInfo().headline }}</p>
+        </div>
+      </div>
+
+      <p class="text-sm text-slate-300 leading-relaxed mb-4">
+        A structured profile summary document is prepared for immediate download. For the official comprehensive PDF with confidential enterprise project references, please request via LinkedIn or direct email.
+      </p>
+
+      <div class="bg-slate-900/90 rounded-xl p-3.5 border border-slate-800 text-xs font-mono text-slate-400 space-y-1 mb-6">
+        <div><span class="text-cyan-400">Role:</span> {{ store.personalInfo().headline }}</div>
+        <div><span class="text-cyan-400">Company:</span> {{ store.personalInfo().company }}</div>
+        <div><span class="text-cyan-400">Specialization:</span> Angular, ASP.NET Core, NestJS, Flutter</div>
+      </div>
+
+      <div class="flex flex-col sm:flex-row gap-3">
+        <button
+          type="button"
+          (click)="store.downloadResume()"
+          class="flex-1 py-2.5 px-4 rounded-xl bg-gradient-to-r from-indigo-500 to-cyan-500 hover:from-indigo-600 hover:to-cyan-600 text-white font-medium text-xs text-center transition-all shadow-md"
+        >
+          Download Summary Document (.txt)
+        </button>
+        <a
+          [href]="store.personalInfo().linkedin"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="py-2.5 px-4 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-800 text-xs font-medium text-center transition-all"
+        >
+          Request on LinkedIn
+        </a>
+      </div>
+    </div>
+  </div>
+}

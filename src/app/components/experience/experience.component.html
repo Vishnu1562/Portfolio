@@ -1,0 +1,60 @@
+<section id="experience" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-slate-900">
+  <div class="space-y-4 mb-12">
+    <div class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-cyan-400 font-semibold">
+      <span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+      <span>01 // Experience</span>
+    </div>
+    <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Enterprise Career</h2>
+    <p class="text-slate-400 text-sm sm:text-base max-w-2xl">
+      Building high-availability, scalable software solutions within enterprise consulting ecosystems.
+    </p>
+  </div>
+
+  <div class="space-y-8">
+    @for (exp of store.experiences(); track exp.company) {
+      <div class="glass-card rounded-2xl p-6 sm:p-8 relative overflow-hidden group">
+        <div class="absolute top-0 left-0 h-full w-1 bg-gradient-to-b from-indigo-500 to-cyan-400"></div>
+
+        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 mb-6">
+          <div>
+            <div class="flex flex-wrap items-center gap-3">
+              <h3 class="text-xl sm:text-2xl font-bold text-white">{{ exp.role }}</h3>
+              <span class="px-2.5 py-0.5 rounded-full text-xs font-mono bg-indigo-500/10 text-indigo-300 border border-indigo-500/30">
+                {{ exp.badge }}
+              </span>
+            </div>
+            <p class="text-base text-cyan-400 font-medium mt-1">
+              {{ exp.company }} &bull; <span class="text-slate-400 text-sm">{{ exp.location }}</span>
+            </p>
+          </div>
+          <div class="font-mono text-xs sm:text-sm text-slate-400 bg-slate-900/90 px-3.5 py-1.5 rounded-lg border border-slate-800 self-start lg:self-auto">
+            {{ exp.period }}
+          </div>
+        </div>
+
+        <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
+          {{ exp.summary }}
+        </p>
+
+        <ul class="space-y-3 mb-6 text-sm text-slate-300">
+          @for (point of exp.points; track point) {
+            <li class="flex items-start gap-3">
+              <svg class="w-4 h-4 text-cyan-400 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <span>{{ point }}</span>
+            </li>
+          }
+        </ul>
+
+        <div class="flex flex-wrap gap-2 pt-4 border-t border-slate-800/80">
+          @for (tech of exp.technologies; track tech) {
+            <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-slate-900/80 text-slate-300 border border-slate-800">
+              {{ tech }}
+            </span>
+          }
+        </div>
+      </div>
+    }
+  </div>
+</section>

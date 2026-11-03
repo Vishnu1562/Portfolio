@@ -1,0 +1,102 @@
+<section id="about" class="relative pt-20 pb-28 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+  <div class="flex flex-col items-start gap-6 max-w-4xl">
+    <!-- Status Badge -->
+    <div
+      data-testid="status-badge"
+      class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-mono bg-slate-900/90 border border-emerald-500/30 text-emerald-300 shadow-sm"
+    >
+      <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+      <span class="w-2 h-2 rounded-full bg-emerald-400 -ml-4"></span>
+      <span>{{ store.personalInfo().status }}</span>
+    </div>
+
+    <!-- Headline & Role -->
+    <div class="space-y-3">
+      <div class="inline-flex items-center gap-2">
+        <span class="text-sm font-mono uppercase tracking-wider text-cyan-400 font-semibold">Hello World, I'm</span>
+        <span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-mono font-medium bg-indigo-950/80 text-indigo-300 border border-indigo-800/60">
+          {{ store.personalInfo().company }}
+        </span>
+      </div>
+      <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.1]">
+        {{ store.personalInfo().name }}
+      </h1>
+      <h2 class="text-2xl sm:text-3xl font-semibold bg-gradient-to-r from-slate-200 via-indigo-200 to-cyan-400 bg-clip-text text-transparent">
+        {{ store.personalInfo().headline }}
+      </h2>
+    </div>
+
+    <!-- Bio Paragraph -->
+    <p class="text-base sm:text-lg text-slate-300 leading-relaxed max-w-3xl">
+      {{ store.personalInfo().bio }}
+    </p>
+
+    <!-- Key Tech Stack Quick Badges -->
+    <div class="flex flex-wrap items-center gap-2 pt-1 font-mono text-xs">
+      <span class="text-slate-400">Core:</span>
+      <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-200">Angular</span>
+      <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-200">TypeScript</span>
+      <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-200">ASP.NET Core</span>
+      <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-200">NestJS</span>
+      <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-200">Flutter</span>
+      <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-200">Azure DevOps</span>
+    </div>
+
+    <!-- CTAs & Socials -->
+    <div class="flex flex-wrap items-center gap-4 pt-4">
+      <a
+        href="#projects"
+        class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-indigo-500 to-cyan-500 hover:from-indigo-600 hover:to-cyan-600 text-white font-medium text-sm transition-all shadow-lg shadow-indigo-500/25 group"
+      >
+        <span>View Projects</span>
+        <svg class="w-4 h-4 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+        </svg>
+      </a>
+
+      <a
+        href="#contact"
+        class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-slate-900 hover:bg-slate-850 text-slate-200 font-medium text-sm border border-slate-800 hover:border-slate-700 transition-all"
+      >
+        <span>Contact Me</span>
+      </a>
+
+      <button
+        type="button"
+        (click)="store.openResumeModal()"
+        class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-slate-900/60 hover:bg-slate-800/80 text-cyan-300 font-mono text-sm border border-cyan-500/30 hover:border-cyan-400 transition-all"
+      >
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+        </svg>
+        <span>Download Resume</span>
+      </button>
+
+      <!-- Social Icons -->
+      <div class="flex items-center gap-3 pl-2 sm:border-l sm:border-slate-800">
+        <a
+          [href]="store.personalInfo().github"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="GitHub Profile"
+          class="p-2.5 rounded-lg bg-slate-900/80 border border-slate-800 text-slate-300 hover:text-white hover:border-slate-600 transition-all"
+        >
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+        </a>
+        <a
+          [href]="store.personalInfo().linkedin"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="LinkedIn Profile"
+          class="p-2.5 rounded-lg bg-slate-900/80 border border-slate-800 text-slate-300 hover:text-white hover:border-slate-600 transition-all"
+        >
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

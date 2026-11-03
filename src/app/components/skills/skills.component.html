@@ -1,0 +1,54 @@
+<section id="skills" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-slate-900">
+  <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+    <div class="space-y-3">
+      <div class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-cyan-400 font-semibold">
+        <span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+        <span>02 // Tech Stack</span>
+      </div>
+      <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Skills & Capabilities</h2>
+      <p class="text-slate-400 text-sm sm:text-base max-w-xl">
+        Comprehensive full-stack toolchain spanning modern frontend architecture, backend microservices, and DevOps pipelines.
+      </p>
+    </div>
+
+    <!-- Category Filter Tabs -->
+    <div class="flex flex-wrap gap-1.5 p-1.5 rounded-xl bg-slate-900 border border-slate-800">
+      @for (cat of store.categories(); track cat) {
+        <button
+          type="button"
+          (click)="onSelectCategory(cat)"
+          [class.bg-gradient-to-r]="store.selectedCategory() === cat"
+          [class.from-indigo-600]="store.selectedCategory() === cat"
+          [class.to-cyan-500]="store.selectedCategory() === cat"
+          [class.text-white]="store.selectedCategory() === cat"
+          [class.text-slate-400]="store.selectedCategory() !== cat"
+          [class.hover:text-slate-200]="store.selectedCategory() !== cat"
+          class="px-3.5 py-1.5 rounded-lg text-xs font-medium transition-all"
+        >
+          {{ cat }}
+        </button>
+      }
+    </div>
+  </div>
+
+  <!-- Skills Grid -->
+  <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+    @for (skill of store.filteredSkills(); track skill.name) {
+      <div class="glass-card p-4 rounded-xl flex flex-col justify-between hover:border-cyan-500/30 transition-all group">
+        <div class="flex items-start justify-between gap-2 mb-3">
+          <span class="font-semibold text-slate-100 text-sm sm:text-base group-hover:text-cyan-300 transition-colors">
+            {{ skill.name }}
+          </span>
+          <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-400 border border-slate-700">
+            {{ skill.category }}
+          </span>
+        </div>
+
+        <div class="flex items-center justify-between text-xs font-mono text-slate-400 pt-2 border-t border-slate-800/60">
+          <span>{{ skill.level }}</span>
+          <span class="text-cyan-400 text-[11px]">{{ skill.tag }}</span>
+        </div>
+      </div>
+    }
+  </div>
+</section>
