@@ -35,12 +35,16 @@ export class App {
   readonly contactChild = viewChild(ContactComponent);
 
   // Store delegations for contract compatibility
+  readonly personalInfo = this.store.personalInfo;
+  readonly experiences = this.store.experiences;
+  readonly categories = this.store.categories;
   readonly isMobileMenuOpen = this.store.isMobileMenuOpen;
   readonly selectedCategory = this.store.selectedCategory;
   readonly filteredSkills = this.store.filteredSkills;
   readonly projects = this.store.projects;
   readonly resumeModalOpen = this.store.resumeModalOpen;
   readonly submissionSuccess = this.store.contactSuccess;
+  readonly isSubmitting = this.store.isSubmittingContact;
 
   get contactForm() {
     const child = this.contactChild();
@@ -73,6 +77,14 @@ export class App {
 
   closeResumeModal(): void {
     this.store.closeResumeModal();
+  }
+
+  downloadPlaceholderResume(): void {
+    this.store.downloadResume();
+  }
+
+  resetContactNotification(): void {
+    this.store.resetContactSuccess();
   }
 
   onSubmitContact(): void {
