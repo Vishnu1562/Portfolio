@@ -44,17 +44,16 @@ describe('Vishnu V - Portfolio Application (Behavioral Contract Tests)', () => {
   });
 
   describe('HF-002: Hero Section Display', () => {
-    it('should display Vishnu V, Full Stack Developer, and EY GDS badge', () => {
+    it('should display Vishnu V and Full Stack Developer without inline company tag in intro', () => {
       const heroText = compiled.querySelector('#about')?.textContent || '';
       expect(heroText).toContain('Vishnu V');
       expect(heroText).toContain('Full Stack Developer');
-      expect(heroText).toContain('EY GDS');
+      expect(compiled.querySelector('[data-testid="hero-company"]')).toBeNull();
     });
 
-    it('should display status indicator for availability', () => {
+    it('should NOT display status indicator for availability', () => {
       const statusBadge = compiled.querySelector('[data-testid="status-badge"]');
-      expect(statusBadge).toBeTruthy();
-      expect(statusBadge?.textContent).toContain('Available for new opportunities');
+      expect(statusBadge).toBeNull();
     });
 
     it('should render primary CTA buttons for Projects and Contact', () => {

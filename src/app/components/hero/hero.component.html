@@ -1,23 +1,10 @@
 <section id="about" class="relative pt-20 pb-28 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
   <div class="flex flex-col items-start gap-6 max-w-4xl">
-    <!-- Status Badge -->
-    <div
-      data-testid="status-badge"
-      class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-mono bg-slate-900/90 border border-emerald-500/30 text-emerald-300 shadow-sm"
-    >
-      <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
-      <span class="w-2 h-2 rounded-full bg-emerald-400 -ml-4"></span>
-      <span>{{ store.personalInfo().status }}</span>
-    </div>
-
     <!-- Headline & Role -->
     <div class="space-y-3">
-      <div class="inline-flex items-center gap-2">
-        <span class="text-sm font-mono uppercase tracking-wider text-cyan-400 font-semibold">Hello World, I'm</span>
-        <span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-mono font-medium bg-indigo-950/80 text-indigo-300 border border-indigo-800/60">
-          {{ store.personalInfo().company }}
-        </span>
-      </div>
+      <span class="text-sm font-mono uppercase tracking-wider text-cyan-400 font-semibold block">
+        Hello World, I'm
+      </span>
       <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.1]">
         {{ store.personalInfo().name }}
       </h1>

@@ -52,8 +52,8 @@ A high-performance, responsive single-page portfolio application that showcases 
   2. Click "View Projects" CTA.
   3. Click "Contact Me" CTA.
 * **Expected Results**:
-  1. Name "Vishnu V", headline "Full Stack Developer", and "EY GDS" badge are clearly visible.
-  2. Status indicator ("Available for new opportunities") is displayed.
+  1. Name "Vishnu V" and headline "Full Stack Developer" are prominently displayed in the Hero section without awkward inline employer tags.
+  2. Availability pill indicator is removed.
   3. "View Projects" scrolls smoothly to `#projects`.
   4. "Contact Me" scrolls smoothly to `#contact`.
 * **Final State**: Target section brought into view.
