@@ -24,7 +24,7 @@ const initialState: PortfolioState = {
     company: 'EY GDS',
     location: 'Kerala, India',
     status: 'Available for new opportunities',
-    bio: 'Full Stack Developer with a primary focus on scalable backend architecture, microservices, and in-IDE developer tooling with NestJS, TypeScript, and ASP.NET Core. Experienced in robust database modeling in PostgreSQL & MySQL, complemented by end-to-end client capabilities in Angular and Flutter.',
+    bio: 'Full Stack Developer with a primary focus on scalable backend architecture, modular REST APIs, and in-IDE developer tooling with NestJS, TypeScript, and ASP.NET Core. Experienced in robust database modeling in PostgreSQL & MySQL, complemented by end-to-end client capabilities in Angular and Flutter.',
     github: 'https://github.com/Vishnu1562',
     linkedin: 'https://www.linkedin.com/in/vishnu-v-40a0/',
     email: 'vishnu.v.dev@outlook.com',
@@ -56,7 +56,7 @@ const initialState: PortfolioState = {
       title: 'NestJS Enterprise API Architecture',
       subtitle: 'Scalable Modular TypeScript Backend Service',
       description:
-        'Hands-on enterprise architecture implementing NestJS decorators, dependency injection containers, middleware guards, validation pipes, and structured routing for microservices.',
+        'Hands-on enterprise architecture implementing NestJS decorators, dependency injection containers, middleware guards, validation pipes, and structured modular service routing.',
       techStack: ['NestJS', 'TypeScript', 'Node.js', 'Express', 'JWT Auth', 'Jest'],
       githubUrl: 'https://github.com/Vishnu1562/NestJs_Learning',
       architecture: 'Modular Domain-Driven structure with Inversion of Control (IoC) and dependency injection.',
@@ -88,9 +88,9 @@ const initialState: PortfolioState = {
       period: 'Present',
       badge: 'Enterprise Experience',
       summary:
-        'Engineering high-impact, mission-critical enterprise applications for global clients. Leading backend microservices and developer productivity tooling, complemented by responsive client SPAs.',
+        'Engineering high-impact, mission-critical enterprise applications for global clients. Focused on robust backend services, scalable API design, and developer productivity tooling, complemented by responsive client SPAs.',
       points: [
-        'Architected and developed modular, enterprise-grade backend services and microservices using NestJS, TypeScript, and Node.js, implementing robust dependency injection, custom middleware guards, and structured validation pipes.',
+        'Architected and developed modular, enterprise-grade backend services and REST APIs using NestJS, TypeScript, and Node.js, implementing robust dependency injection, custom middleware guards, and structured validation pipes.',
         'Engineered intelligent, real-time in-IDE developer productivity extensions for both IntelliJ IDEA (JetBrains Plugin SDK) and Visual Studio / VS Code as part of a strategic client engagement. Implemented context-aware code generation, intelligent inline completions, syntax-aware analysis, and custom enterprise workflow automations directly within developers\' active editor environments.',
         'Engineered high-throughput RESTful Web APIs using ASP.NET Core and Entity Framework Core, optimizing SQL/PostgreSQL database queries, indexing, and repository patterns.',
         'Delivered responsive Single Page Applications (SPAs) with Angular, NgRx state management, and modern SCSS architecture to provide seamless client interfaces for enterprise systems.',
