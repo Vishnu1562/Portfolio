@@ -174,4 +174,21 @@ describe('Vishnu V - Portfolio Application (Behavioral Contract Tests)', () => {
       expect(component.contactForm.get('email')?.value).toBeFalsy();
     });
   });
+
+  describe('HF-007: Enterprise Career & IDE Extension Development Details', () => {
+    it('should display IDE extension development in the Experience section', () => {
+      const expText = compiled.querySelector('#experience')?.textContent || '';
+      expect(expText).toContain('IntelliJ IDEA');
+      expect(expText).toContain('Visual Studio');
+      expect(expText).toContain('productivity extensions');
+    });
+
+    it('should include IDE extension skills in the Cloud & Tools filter', () => {
+      component.setCategory('Cloud & Tools');
+      fixture.detectChanges();
+      const filtered = component.filteredSkills();
+      expect(filtered.some((s) => s.name === 'IntelliJ IDEA Extension')).toBe(true);
+      expect(filtered.some((s) => s.name === 'Visual Studio Extension')).toBe(true);
+    });
+  });
 });

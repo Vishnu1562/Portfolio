@@ -47,6 +47,8 @@ const initialState: PortfolioState = {
     { name: 'Azure DevOps', category: 'Cloud & Tools', level: 'Advanced', tag: 'CI/CD & Boards', iconName: 'azure' },
     { name: 'Git & GitHub', category: 'Cloud & Tools', level: 'Expert', tag: 'Version Control', iconName: 'git' },
     { name: 'Postman', category: 'Cloud & Tools', level: 'Advanced', tag: 'API Testing', iconName: 'postman' },
+    { name: 'IntelliJ IDEA Extension', category: 'Cloud & Tools', level: 'Advanced', tag: 'JetBrains SDK', iconName: 'intellij' },
+    { name: 'Visual Studio Extension', category: 'Cloud & Tools', level: 'Advanced', tag: 'VSIX / Extensibility', iconName: 'vs' },
   ],
   selectedCategory: 'All',
   projects: [
@@ -88,12 +90,26 @@ const initialState: PortfolioState = {
       summary:
         'Engineering high-impact, mission-critical enterprise applications for global clients. Collaborating within agile cross-functional teams to design, architect, and deliver robust frontend interfaces and resilient backend microservices.',
       points: [
+        'Engineered intelligent, real-time in-IDE developer productivity extensions for both IntelliJ IDEA (JetBrains Plugin SDK) and Visual Studio / VS Code as part of a strategic client engagement. Implemented context-aware code generation, intelligent inline completions, syntax-aware analysis, and custom enterprise workflow automations directly within developers\' active editor environments.',
         'Architected and implemented responsive Single Page Applications (SPAs) with Angular, NgRx state management, and modern SCSS architecture.',
         'Engineered high-throughput RESTful Web APIs using ASP.NET Core and NestJS, optimizing SQL/PostgreSQL database queries and repository patterns.',
         'Integrated automated testing, CI/CD pipelines via Azure DevOps, and participated in regular code reviews, linting, and architectural alignment.',
         'Partnered with enterprise stakeholders and UX designers to translate complex business workflows into seamless, accessible web and mobile solutions.',
       ],
-      technologies: ['Angular', 'TypeScript', 'NgRx', 'ASP.NET Core', 'C#', 'NestJS', 'Azure DevOps', 'PostgreSQL', 'SCSS'],
+      technologies: [
+        'IntelliJ IDEA Plugin SDK',
+        'Visual Studio Extension (VSIX)',
+        'Context-Aware AI Assistance',
+        'Angular',
+        'TypeScript',
+        'NgRx',
+        'ASP.NET Core',
+        'C#',
+        'NestJS',
+        'Azure DevOps',
+        'PostgreSQL',
+        'SCSS',
+      ],
     },
   ],
   isMobileMenuOpen: false,
@@ -146,11 +162,13 @@ CORE SKILLS:
 - Frontend: Angular (v16-v19), TypeScript, NgRx, SCSS, HTML5, Tailwind CSS
 - Backend: ASP.NET Core, C#, NestJS, Node.js, Entity Framework Core
 - Mobile: Flutter, Dart
+- IDE Extensions: IntelliJ IDEA Plugin SDK, Visual Studio Extension (VSIX), AI-Assisted Tooling
 - Databases: PostgreSQL, MySQL
 - DevOps & Tools: Azure DevOps, Git, Postman, NPM
 
 EXPERIENCE:
 Full Stack Developer | EY GDS | Kerala, India
+- Engineered intelligent in-IDE developer productivity extensions for IntelliJ IDEA and Visual Studio/VS Code delivering context-aware code generation and editor automations.
 - Designing and developing enterprise web solutions using Angular, TypeScript, and .NET Core.
 - Developing modular backend services and REST APIs with comprehensive unit tests.
 - Implementing CI/CD pipelines with Azure DevOps and enforcing strict code quality.

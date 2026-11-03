@@ -100,6 +100,15 @@ A high-performance, responsive single-page portfolio application that showcases 
   3. Form fields reset to empty.
 * **Final State**: Form is cleared, success confirmation visible.
 
+### HF-007: Enterprise Career & IDE Extension Development Details
+* **Preconditions**: User navigates to `#experience` section.
+* **Actions**: Inspect EY GDS enterprise experience card.
+* **Expected Results**:
+  1. Displays full-stack enterprise accomplishments at EY GDS.
+  2. Specifically highlights in-IDE developer productivity extension development across both IntelliJ IDEA and Visual Studio ecosystems.
+  3. Displays associated technologies: IntelliJ IDEA Plugin SDK, Visual Studio Extension (VSIX), and Context-Aware AI Assistance.
+* **Final State**: Enterprise experience details verified.
+
 ---
 
 ## Negative Flows
