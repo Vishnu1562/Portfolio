@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vishnu V - Full Stack Developer Resume</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 14mm 16mm;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: #1e293b;
+      background: #ffffff;
+      line-height: 1.45;
+      font-size: 10.5pt;
+    }
+
+    .resume {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Header */
+    header {
+      border-bottom: 2px solid #0f172a;
+      padding-bottom: 10px;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-size: 22pt;
+      font-weight: 800;
+      color: #0f172a;
+      letter-spacing: -0.5px;
+      text-transform: uppercase;
+      margin-bottom: 2px;
+    }
+
+    .title {
+      font-size: 12.5pt;
+      font-weight: 600;
+      color: #2563eb;
+      margin-bottom: 6px;
+    }
+
+    .contact-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 9.5pt;
+      color: #475569;
+    }
+
+    .contact-bar a {
+      color: #0f172a;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact-bar a:hover {
+      text-decoration: underline;
+    }
+
+    /* Section Styling */
+    section {
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      font-size: 11pt;
+      font-weight: 700;
+      color: #0f172a;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      border-bottom: 1px solid #cbd5e1;
+      padding-bottom: 3px;
+      margin-bottom: 7px;
+    }
+
+    /* Summary */
+    p.summary {
+      font-size: 10pt;
+      color: #334155;
+      line-height: 1.5;
+      text-align: justify;
+    }
+
+    /* Skills Grid */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 4px 10px;
+      font-size: 9.5pt;
+    }
+
+    .skill-cat {
+      font-weight: 700;
+      color: #1e293b;
+    }
+
+    .skill-items {
+      color: #334155;
+    }
+
+    /* Experience & Projects */
+    .entry {
+      margin-bottom: 10px;
+    }
+
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2px;
+    }
+
+    .entry-title {
+      font-size: 10.5pt;
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    .entry-subtitle {
+      font-size: 10pt;
+      font-weight: 600;
+      color: #2563eb;
+    }
+
+    .entry-date {
+      font-size: 9pt;
+      color: #64748b;
+      font-weight: 500;
+      text-align: right;
+    }
+
+    ul.bullets {
+      margin-left: 16px;
+      margin-top: 3px;
+    }
+
+    ul.bullets li {
+      font-size: 9.5pt;
+      color: #334155;
+      margin-bottom: 3px;
+      line-height: 1.4;
+    }
+
+    ul.bullets li strong {
+      color: #0f172a;
+    }
+
+    .tech-pill {
+      font-size: 8.5pt;
+      color: #475569;
+      font-style: italic;
+      margin-top: 2px;
+    }
+  </style>
+</head>
+<body>
+  <div class="resume">
+    <!-- Header -->
+    <header>
+      <h1>Vishnu V</h1>
+      <div class="title">Full Stack Developer &bull; Backend Specialization (NestJS &amp; ASP.NET Core)</div>
+      <div class="contact-bar">
+        <span>📍 Kerala, India</span>
+        <span>📧 <a href="mailto:vishnu.v.dev@outlook.com">vishnu.v.dev@outlook.com</a></span>
+        <span>🔗 <a href="https://linkedin.com/in/vishnu-v-40a0">linkedin.com/in/vishnu-v-40a0</a></span>
+        <span>💻 <a href="https://github.com/Vishnu1562">github.com/Vishnu1562</a></span>
+      </div>
+    </header>
+
+    <!-- Professional Summary -->
+    <section>
+      <h2>Professional Summary</h2>
+      <p class="summary">
+        Results-driven <strong>Full Stack Developer</strong> with enterprise consulting experience at <strong>EY GDS</strong>, focusing on scalable server-side architecture, modular REST APIs, and developer productivity tooling with <strong>NestJS (TypeScript)</strong>, <strong>Node.js</strong>, and <strong>ASP.NET Core (C#)</strong>. Proven track record building cross-platform in-IDE developer extensions for <strong>IntelliJ IDEA</strong> and <strong>Visual Studio / VS Code</strong> to automate enterprise engineering workflows. Experienced in relational database modeling with <strong>PostgreSQL</strong> and <strong>MySQL</strong>, coupled with full-stack capability delivering responsive client interfaces in <strong>Angular</strong> and cross-platform mobile apps in <strong>Flutter</strong>.
+      </p>
+    </section>
+
+    <!-- Technical Skills -->
+    <section>
+      <h2>Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-cat">Backend &amp; Languages:</div>
+        <div class="skill-items">NestJS, Node.js, TypeScript, JavaScript (ES6+), ASP.NET Core (.NET 8/9), C#, Dart</div>
+
+        <div class="skill-cat">IDE Extensibility:</div>
+        <div class="skill-items">IntelliJ IDEA Plugin SDK (JetBrains), Visual Studio Extension (VSIX), VS Code Extensions</div>
+
+        <div class="skill-cat">Databases &amp; ORM:</div>
+        <div class="skill-items">PostgreSQL, MySQL, Entity Framework Core, SQL Server</div>
+
+        <div class="skill-cat">Frontend &amp; Mobile:</div>
+        <div class="skill-items">Angular (v16–v19), NgRx, SCSS, HTML5, Tailwind CSS, Flutter</div>
+
+        <div class="skill-cat">DevOps &amp; Tools:</div>
+        <div class="skill-items">Azure DevOps (CI/CD Pipelines, Repos), Git, GitHub, Postman, NPM, RESTful Architecture</div>
+      </div>
+    </section>
+
+    <!-- Professional Experience -->
+    <section>
+      <h2>Professional Experience</h2>
+      <div class="entry">
+        <div class="entry-header">
+          <div>
+            <span class="entry-title">Full Stack Developer</span> &bull; <span class="entry-subtitle">EY GDS (Ernst &amp; Young Global Delivery Services)</span>
+          </div>
+          <span class="entry-date">Kerala, India | Present</span>
+        </div>
+        <ul class="bullets">
+          <li>
+            <strong>IntelliJ &amp; Visual Studio Extension Development:</strong> Engineered custom, real-time in-IDE developer productivity extensions for both <strong>IntelliJ IDEA</strong> (JetBrains Plugin SDK) and <strong>Visual Studio / VS Code</strong> as part of a high-priority enterprise client initiative. Implemented context-aware code generation, intelligent completions, syntax analysis, and automated workflows directly within developer environments.
+          </li>
+          <li>
+            <strong>Modular Backend Services (NestJS):</strong> Architected and developed modular, enterprise-grade backend services and REST APIs with <strong>NestJS</strong>, TypeScript, and Node.js, utilizing dependency injection, custom middleware guards, interceptors, and strict validation pipes.
+          </li>
+          <li>
+            <strong>ASP.NET Core REST APIs:</strong> Engineered high-throughput Web APIs using <strong>ASP.NET Core (.NET 8/9)</strong> and Entity Framework Core, implementing Clean Architecture, repository patterns, and query optimizations for PostgreSQL and SQL Server.
+          </li>
+          <li>
+            <strong>Frontend SPAs:</strong> Developed responsive, accessible Single Page Applications (SPAs) with <strong>Angular</strong>, <strong>NgRx</strong> state management, and modular SCSS styling for enterprise client portals.
+          </li>
+          <li>
+            <strong>DevOps &amp; Code Quality:</strong> Implemented automated unit/integration testing suites and CI/CD pipelines in <strong>Azure DevOps</strong>, enforcing strict linting, type-safety, and code review standards across distributed teams.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Technical Projects -->
+    <section>
+      <h2>Key Technical Projects</h2>
+
+      <div class="entry">
+        <div class="entry-header">
+          <div>
+            <span class="entry-title">NestJS Enterprise API Architecture</span> &bull; <a href="https://github.com/Vishnu1562/NestJs_Learning" style="color:#2563eb; font-size:9pt; text-decoration:none;">github.com/Vishnu1562/NestJs_Learning</a>
+          </div>
+          <span class="entry-date">TypeScript &bull; Node.js &bull; Express &bull; JWT</span>
+        </div>
+        <ul class="bullets">
+          <li>Architected modular domain-driven backend service showcasing Inversion of Control (IoC), dependency injection, and JWT-based authentication guards.</li>
+          <li>Structured request/response lifecycle using custom validation pipes, exception filters, and automated unit tests with Jest.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <div>
+            <span class="entry-title">StudentAdminPortal.API</span> &bull; <a href="https://github.com/Vishnu1562/StudentAdminPortal.API" style="color:#2563eb; font-size:9pt; text-decoration:none;">github.com/Vishnu1562/StudentAdminPortal.API</a>
+          </div>
+          <span class="entry-date">ASP.NET Core &bull; C# &bull; EF Core &bull; SQL / PostgreSQL</span>
+        </div>
+        <ul class="bullets">
+          <li>Designed RESTful Web API implementing Clean Architecture and Repository Pattern for managing student profiles, address mappings, and profile media.</li>
+          <li>Configured AutoMapper profiles, FluentValidation rules, and database schema migrations using Entity Framework Core.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <div>
+            <span class="entry-title">Flutter World Time Mobile Application</span> &bull; <a href="https://github.com/Vishnu1562/Flutter_world_time_app" style="color:#2563eb; font-size:9pt; text-decoration:none;">github.com/Vishnu1562/Flutter_world_time_app</a>
+          </div>
+          <span class="entry-date">Flutter &bull; Dart &bull; REST API &bull; Async/Await</span>
+        </div>
+        <ul class="bullets">
+          <li>Built cross-platform mobile application consuming external World Time REST APIs with asynchronous network caching and reactive UI state.</li>
+          <li>Implemented dynamic day/night visuals and fluid location-based routing across diverse screen form factors.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section>
+      <h2>Education</h2>
+      <div class="entry">
+        <div class="entry-header">
+          <div>
+            <span class="entry-title">Bachelor of Technology / Bachelor of Engineering in Computer Science / IT</span>
+          </div>
+          <span class="entry-date">Kerala, India</span>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

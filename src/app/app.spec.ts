@@ -134,6 +134,14 @@ describe('Vishnu V - Portfolio Application (Behavioral Contract Tests)', () => {
       component.closeResumeModal();
       expect(component.resumeModalOpen()).toBe(false);
     });
+
+    it('should link to the PDF resume document', () => {
+      component.triggerResumeDownload();
+      fixture.detectChanges();
+      const link = compiled.querySelector('a[download="Vishnu_V_Resume.pdf"]');
+      expect(link).toBeTruthy();
+      expect(link?.getAttribute('href')).toBe('/Vishnu_V_Resume.pdf');
+    });
   });
 
   describe('HF-006, NF-001, NF-002: Contact Form Validation & State', () => {

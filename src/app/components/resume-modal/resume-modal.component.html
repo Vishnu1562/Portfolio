@@ -24,30 +24,34 @@
       </div>
 
       <p class="text-sm text-slate-300 leading-relaxed mb-4">
-        A structured profile summary document is prepared for immediate download. For the official comprehensive PDF with confidential enterprise project references, please request via LinkedIn or direct email.
+        A professional, ATS-compliant PDF resume is available for instant download, detailing enterprise experience at EY GDS, in-IDE extension engineering, backend architecture, and technical projects.
       </p>
 
       <div class="bg-slate-900/90 rounded-xl p-3.5 border border-slate-800 text-xs font-mono text-slate-400 space-y-1 mb-6">
         <div><span class="text-cyan-400">Role:</span> {{ store.personalInfo().headline }}</div>
         <div><span class="text-cyan-400">Company:</span> {{ store.personalInfo().company }}</div>
-        <div><span class="text-cyan-400">Specialization:</span> Angular, ASP.NET Core, NestJS, Flutter</div>
+        <div><span class="text-cyan-400">Specialization:</span> NestJS, TypeScript, ASP.NET Core, IDE Extensions</div>
       </div>
 
       <div class="flex flex-col sm:flex-row gap-3">
-        <button
-          type="button"
-          (click)="store.downloadResume()"
-          class="flex-1 py-2.5 px-4 rounded-xl bg-gradient-to-r from-indigo-500 to-cyan-500 hover:from-indigo-600 hover:to-cyan-600 text-white font-medium text-xs text-center transition-all shadow-md"
+        <a
+          href="/Vishnu_V_Resume.pdf"
+          download="Vishnu_V_Resume.pdf"
+          (click)="store.closeResumeModal()"
+          class="flex-1 py-2.5 px-4 rounded-xl bg-gradient-to-r from-indigo-500 to-cyan-500 hover:from-indigo-600 hover:to-cyan-600 text-white font-medium text-xs text-center transition-all shadow-md inline-flex items-center justify-center gap-2"
         >
-          Download Summary Document (.txt)
-        </button>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+          </svg>
+          <span>Download PDF Resume</span>
+        </a>
         <a
           [href]="store.personalInfo().linkedin"
           target="_blank"
           rel="noopener noreferrer"
           class="py-2.5 px-4 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-800 text-xs font-medium text-center transition-all"
         >
-          Request on LinkedIn
+          Connect on LinkedIn
         </a>
       </div>
     </div>

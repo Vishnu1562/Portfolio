@@ -86,7 +86,7 @@ A high-performance, responsive single-page portfolio application that showcases 
 * **Actions**:
   1. Click "Download Resume" button.
 * **Expected Results**:
-  1. Triggers download of the placeholder resume asset (`vishnu-v-resume.pdf` / markdown summary) or displays a modal confirming placeholder status.
+  1. Opens the CV modal and triggers download of the industry standard PDF resume (`Vishnu_V_Resume.pdf`).
 * **Final State**: File download initiates without error.
 
 ### HF-006: Contact Form Successful Submission

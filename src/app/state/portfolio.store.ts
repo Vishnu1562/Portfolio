@@ -147,51 +147,12 @@ export const PortfolioStore = signalStore(
       patchState(store, { resumeModalOpen: false });
     },
     downloadResume(): void {
-      const p = store.personalInfo();
-      const content = `================================================
-${p.name.toUpperCase()} - ${p.headline.toUpperCase()}
-Current Company: ${p.company}
-Location: ${p.location}
-GitHub: ${p.github}
-LinkedIn: ${p.linkedin}
-================================================
-
-SUMMARY:
-${p.bio}
-
-CORE SKILLS:
-- Frontend: Angular (v16-v19), TypeScript, NgRx, SCSS, HTML5, Tailwind CSS
-- Backend: ASP.NET Core, C#, NestJS, Node.js, Entity Framework Core
-- Mobile: Flutter, Dart
-- IDE Extensions: IntelliJ IDEA Plugin SDK, Visual Studio Extension (VSIX), AI-Assisted Tooling
-- Databases: PostgreSQL, MySQL
-- DevOps & Tools: Azure DevOps, Git, Postman, NPM
-
-EXPERIENCE:
-Full Stack Developer | EY GDS | Kerala, India
-- Engineered intelligent in-IDE developer productivity extensions for IntelliJ IDEA and Visual Studio/VS Code delivering context-aware code generation and editor automations.
-- Designing and developing enterprise web solutions using Angular, TypeScript, and .NET Core.
-- Developing modular backend services and REST APIs with comprehensive unit tests.
-- Implementing CI/CD pipelines with Azure DevOps and enforcing strict code quality.
-
-FEATURED PROJECTS:
-1. StudentAdminPortal.API (ASP.NET Core, EF Core, SQL Server, Clean Architecture)
-2. Flutter World Time App (Flutter, Dart, World Time API, Async UI)
-3. NestJS Enterprise API Architecture (TypeScript, NestJS, Inversion of Control)
-
-* Official verified PDF resume is available on request.
-Contact: ${p.linkedin}
-================================================`;
-
-      const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
-      const url = window.URL.createObjectURL(blob);
       const a = document.createElement('a');
-      a.href = url;
-      a.download = 'Vishnu_V_Resume_Summary.txt';
+      a.href = '/Vishnu_V_Resume.pdf';
+      a.download = 'Vishnu_V_Resume.pdf';
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);
-      window.URL.revokeObjectURL(url);
       patchState(store, { resumeModalOpen: false });
     },
     submitContact(data: ContactFormData): void {
