@@ -74,10 +74,10 @@ A high-performance, responsive single-page portfolio application that showcases 
 ### HF-004: Featured Projects Exploration
 * **Preconditions**: User is in the `#projects` section.
 * **Actions**:
-  1. Inspect project cards: `StudentAdminPortal.API`, `Flutter World Time App`, `NestJS Enterprise API`.
+  1. Inspect project cards: `NestJS Enterprise API Architecture` (featured first), `StudentAdminPortal.API`, `Flutter World Time App`.
   2. Click GitHub repository link on a project card.
 * **Expected Results**:
-  1. Cards render title, description, technology badges, and external links.
+  1. Cards render title, description, technology badges, and external links with NestJS featured prominently.
   2. Links open the respective GitHub repository in a new tab (`target="_blank"` with `rel="noopener noreferrer"`).
 * **Final State**: Correct project repository opens in external tab.
 

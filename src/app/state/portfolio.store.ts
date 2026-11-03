@@ -24,7 +24,7 @@ const initialState: PortfolioState = {
     company: 'EY GDS',
     location: 'Kerala, India',
     status: 'Available for new opportunities',
-    bio: 'Full Stack Developer at Ernst & Young (EY GDS) crafting scalable enterprise web and mobile applications. Focused on robust backend systems with ASP.NET Core & NestJS, and fluid reactive client experiences with Angular & Flutter.',
+    bio: 'Full Stack Developer with a primary focus on scalable backend architecture, microservices, and in-IDE developer tooling with NestJS, TypeScript, and ASP.NET Core. Experienced in robust database modeling in PostgreSQL & MySQL, complemented by end-to-end client capabilities in Angular and Flutter.',
     github: 'https://github.com/Vishnu1562',
     linkedin: 'https://www.linkedin.com/in/vishnu-v-40a0/',
     email: 'vishnu.v.dev@outlook.com',
@@ -53,6 +53,15 @@ const initialState: PortfolioState = {
   selectedCategory: 'All',
   projects: [
     {
+      title: 'NestJS Enterprise API Architecture',
+      subtitle: 'Scalable Modular TypeScript Backend Service',
+      description:
+        'Hands-on enterprise architecture implementing NestJS decorators, dependency injection containers, middleware guards, validation pipes, and structured routing for microservices.',
+      techStack: ['NestJS', 'TypeScript', 'Node.js', 'Express', 'JWT Auth', 'Jest'],
+      githubUrl: 'https://github.com/Vishnu1562/NestJs_Learning',
+      architecture: 'Modular Domain-Driven structure with Inversion of Control (IoC) and dependency injection.',
+    },
+    {
       title: 'StudentAdminPortal.API',
       subtitle: 'Enterprise REST Web API & Database Integration',
       description:
@@ -70,15 +79,6 @@ const initialState: PortfolioState = {
       githubUrl: 'https://github.com/Vishnu1562/Flutter_world_time_app',
       architecture: 'Stateful reactive UI architecture with asynchronous network layer and location cache.',
     },
-    {
-      title: 'NestJS Enterprise API Architecture',
-      subtitle: 'Scalable Modular TypeScript Backend Service',
-      description:
-        'Hands-on enterprise architecture implementing NestJS decorators, dependency injection containers, middleware guards, validation pipes, and structured routing for microservices.',
-      techStack: ['NestJS', 'TypeScript', 'Node.js', 'Express', 'JWT Auth', 'Jest'],
-      githubUrl: 'https://github.com/Vishnu1562/NestJs_Learning',
-      architecture: 'Modular Domain-Driven structure with Inversion of Control (IoC) and dependency injection.',
-    },
   ],
   experiences: [
     {
@@ -88,26 +88,27 @@ const initialState: PortfolioState = {
       period: 'Present',
       badge: 'Enterprise Experience',
       summary:
-        'Engineering high-impact, mission-critical enterprise applications for global clients. Collaborating within agile cross-functional teams to design, architect, and deliver robust frontend interfaces and resilient backend microservices.',
+        'Engineering high-impact, mission-critical enterprise applications for global clients. Leading backend microservices and developer productivity tooling, complemented by responsive client SPAs.',
       points: [
+        'Architected and developed modular, enterprise-grade backend services and microservices using NestJS, TypeScript, and Node.js, implementing robust dependency injection, custom middleware guards, and structured validation pipes.',
         'Engineered intelligent, real-time in-IDE developer productivity extensions for both IntelliJ IDEA (JetBrains Plugin SDK) and Visual Studio / VS Code as part of a strategic client engagement. Implemented context-aware code generation, intelligent inline completions, syntax-aware analysis, and custom enterprise workflow automations directly within developers\' active editor environments.',
-        'Architected and implemented responsive Single Page Applications (SPAs) with Angular, NgRx state management, and modern SCSS architecture.',
-        'Engineered high-throughput RESTful Web APIs using ASP.NET Core and NestJS, optimizing SQL/PostgreSQL database queries and repository patterns.',
+        'Engineered high-throughput RESTful Web APIs using ASP.NET Core and Entity Framework Core, optimizing SQL/PostgreSQL database queries, indexing, and repository patterns.',
+        'Delivered responsive Single Page Applications (SPAs) with Angular, NgRx state management, and modern SCSS architecture to provide seamless client interfaces for enterprise systems.',
         'Integrated automated testing, CI/CD pipelines via Azure DevOps, and participated in regular code reviews, linting, and architectural alignment.',
-        'Partnered with enterprise stakeholders and UX designers to translate complex business workflows into seamless, accessible web and mobile solutions.',
       ],
       technologies: [
+        'NestJS',
+        'TypeScript',
+        'Node.js',
+        'PostgreSQL',
+        'ASP.NET Core',
+        'C#',
         'IntelliJ IDEA Plugin SDK',
         'Visual Studio Extension (VSIX)',
         'Context-Aware AI Assistance',
         'Angular',
-        'TypeScript',
         'NgRx',
-        'ASP.NET Core',
-        'C#',
-        'NestJS',
         'Azure DevOps',
-        'PostgreSQL',
         'SCSS',
       ],
     },

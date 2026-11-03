@@ -98,9 +98,10 @@ describe('Vishnu V - Portfolio Application (Behavioral Contract Tests)', () => {
   });
 
   describe('HF-004: Featured Projects', () => {
-    it('should display real GitHub projects with proper external links and tags', () => {
+    it('should display real GitHub projects with NestJS featured first', () => {
       const projects = component.projects();
       expect(projects.length).toBeGreaterThanOrEqual(3);
+      expect(projects[0].title).toContain('NestJS');
 
       const studentPortal = projects.find((p) => p.title.includes('StudentAdminPortal'));
       expect(studentPortal).toBeDefined();
