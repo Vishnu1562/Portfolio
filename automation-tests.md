@@ -74,20 +74,22 @@ A high-performance, responsive single-page portfolio application that showcases 
 ### HF-004: Featured Projects Exploration
 * **Preconditions**: User is in the `#projects` section.
 * **Actions**:
-  1. Inspect project cards: `NestJS Enterprise API Architecture` (featured first), `StudentAdminPortal.API`, `Flutter World Time App`.
-  2. Click GitHub repository link on a project card.
+  1. Inspect project cards: `Martial Arts Event Manager Platform`, `Multi-Profile Job Radar`, `Saudi Ministry & Government Web Applications`, `Developer Productivity IDE Extensions`.
+  2. Click project link on a project card.
 * **Expected Results**:
-  1. Cards render title, description, technology badges, and external links with NestJS featured prominently.
-  2. Links open the respective GitHub repository in a new tab (`target="_blank"` with `rel="noopener noreferrer"`).
-* **Final State**: Correct project repository opens in external tab.
+  1. Cards render title, subtitle, description, technology badges, and architectural details highlighting full-stack NestJS/Angular, automation, enterprise government portals, and in-IDE developer extensions.
+  2. External links open with `target="_blank"` and `rel="noopener noreferrer"`.
+* **Final State**: Correct project links and cards verified.
 
-### HF-005: Resume Download / View
+### HF-005: Resume Download / View (Industry ATS Standard)
 * **Preconditions**: User clicks "Download Resume" in header or hero section.
 * **Actions**:
   1. Click "Download Resume" button.
 * **Expected Results**:
   1. Opens the CV modal and triggers download of the industry standard PDF resume (`Vishnu_V_Resume.pdf`).
-* **Final State**: File download initiates without error.
+  2. Resume content follows clean ATS standards with zero decorative emojis (`📍`, `📧`, `🔗`, `💻`, `📌`, `🛠️`, `💼`, `🚀`, `🎓`) and removes generic AI fluff.
+  3. Resume highlights enterprise accomplishments (EY GDS, Saudi Ministry projects, IDE extensions) and technical projects (Martial Arts Event Manager, Multi-Profile Job Radar).
+* **Final State**: ATS-compliant resume download initiated without error.
 
 ### HF-006: Contact Form Successful Submission
 * **Preconditions**: User navigates to `#contact` section.
@@ -106,7 +108,8 @@ A high-performance, responsive single-page portfolio application that showcases 
 * **Expected Results**:
   1. Displays full-stack enterprise accomplishments at EY GDS.
   2. Specifically highlights in-IDE developer productivity extension development across both IntelliJ IDEA and Visual Studio ecosystems.
-  3. Displays associated technologies: IntelliJ IDEA Plugin SDK, Visual Studio Extension (VSIX), and Context-Aware AI Assistance.
+  3. Highlights enterprise web applications and API platforms engineered for public sector clients including the Saudi Ministry.
+  4. Displays associated technologies: NestJS, ASP.NET Core, IntelliJ Plugin SDK, Visual Studio (VSIX), PostgreSQL, Angular.
 * **Final State**: Enterprise experience details verified.
 
 ---

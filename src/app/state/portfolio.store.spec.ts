@@ -16,7 +16,7 @@ describe('PortfolioStore (NgRx SignalStore)', () => {
     expect(store.personalInfo().company).toBe('EY GDS');
     expect(store.selectedCategory()).toBe('All');
     expect(store.skills().length).toBeGreaterThan(10);
-    expect(store.projects().length).toBe(3);
+    expect(store.projects().length).toBe(4);
     expect(store.isMobileMenuOpen()).toBe(false);
     expect(store.resumeModalOpen()).toBe(false);
   });

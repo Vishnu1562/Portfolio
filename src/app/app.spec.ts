@@ -98,27 +98,29 @@ describe('Vishnu V - Portfolio Application (Behavioral Contract Tests)', () => {
   });
 
   describe('HF-004: Featured Projects', () => {
-    it('should display real GitHub projects with NestJS featured first', () => {
+    it('should display industry-standard projects including Martial Arts Event Manager and Job Radar', () => {
       const projects = component.projects();
-      expect(projects.length).toBeGreaterThanOrEqual(3);
-      expect(projects[0].title).toContain('NestJS');
+      expect(projects.length).toBeGreaterThanOrEqual(4);
 
-      const studentPortal = projects.find((p) => p.title.includes('StudentAdminPortal'));
-      expect(studentPortal).toBeDefined();
-      expect(studentPortal?.githubUrl).toContain('Vishnu1562/StudentAdminPortal.API');
+      const martialArts = projects.find((p) => p.title.includes('Martial Arts Event Manager'));
+      expect(martialArts).toBeDefined();
+      expect(martialArts?.techStack).toContain('NestJS');
+      expect(martialArts?.techStack).toContain('Angular');
 
-      const flutterApp = projects.find((p) => p.title.includes('World Time'));
-      expect(flutterApp).toBeDefined();
-      expect(flutterApp?.githubUrl).toContain('Vishnu1562/Flutter_world_time_app');
+      const jobRadar = projects.find((p) => p.title.includes('Job Radar') || p.title.includes('Job Bot'));
+      expect(jobRadar).toBeDefined();
+      expect(jobRadar?.githubUrl).toContain('Vishnu1562/Job_Bot');
 
-      const nestApp = projects.find((p) => p.title.includes('NestJS'));
-      expect(nestApp).toBeDefined();
-      expect(nestApp?.githubUrl).toContain('Vishnu1562/NestJs_Learning');
+      const govProject = projects.find((p) => p.title.includes('Saudi Ministry') || p.title.includes('Public Sector'));
+      expect(govProject).toBeDefined();
+
+      const ideTooling = projects.find((p) => p.title.includes('IDE Extension') || p.title.includes('Developer Productivity'));
+      expect(ideTooling).toBeDefined();
     });
 
     it('should ensure all project GitHub links have rel="noopener noreferrer" and target="_blank"', () => {
       const projectLinks = compiled.querySelectorAll('#projects a[target="_blank"]');
-      expect(projectLinks.length).toBeGreaterThanOrEqual(3);
+      expect(projectLinks.length).toBeGreaterThanOrEqual(4);
       projectLinks.forEach((link) => {
         expect(link.getAttribute('rel')).toContain('noopener');
         expect(link.getAttribute('rel')).toContain('noreferrer');
@@ -185,11 +187,12 @@ describe('Vishnu V - Portfolio Application (Behavioral Contract Tests)', () => {
   });
 
   describe('HF-007: Enterprise Career & IDE Extension Development Details', () => {
-    it('should display IDE extension development in the Experience section', () => {
+    it('should display IDE extension development and Saudi Ministry projects in the Experience section', () => {
       const expText = compiled.querySelector('#experience')?.textContent || '';
       expect(expText).toContain('IntelliJ IDEA');
       expect(expText).toContain('Visual Studio');
       expect(expText).toContain('productivity extensions');
+      expect(expText).toContain('Saudi Ministry');
     });
 
     it('should include IDE extension skills in the Cloud & Tools filter', () => {
