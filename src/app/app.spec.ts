@@ -142,7 +142,7 @@ describe('Vishnu V - Portfolio Application (Behavioral Contract Tests)', () => {
       fixture.detectChanges();
       const link = compiled.querySelector('a[download="Vishnu_V_Resume.pdf"]');
       expect(link).toBeTruthy();
-      expect(link?.getAttribute('href')).toBe('/Vishnu_V_Resume.pdf');
+      expect(link?.getAttribute('href')).toContain('Vishnu_V_Resume.pdf');
     });
   });
 

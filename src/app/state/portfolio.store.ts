@@ -158,7 +158,7 @@ export const PortfolioStore = signalStore(
     },
     downloadResume(): void {
       const a = document.createElement('a');
-      a.href = '/Vishnu_V_Resume.pdf';
+      a.href = 'Vishnu_V_Resume.pdf';
       a.download = 'Vishnu_V_Resume.pdf';
       document.body.appendChild(a);
       a.click();
