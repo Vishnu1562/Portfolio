@@ -22,7 +22,7 @@ const initialState: PortfolioState = {
     name: 'Vishnu V',
     headline: 'Full Stack Developer',
     company: 'EY GDS',
-    location: 'Kerala, India',
+    location: 'Kochi, Kerala, India',
     status: 'Available for new opportunities',
     bio: 'Full Stack Developer with a primary focus on scalable backend architecture, modular REST APIs, and in-IDE developer tooling with NestJS, TypeScript, and ASP.NET Core. Experienced in robust database modeling in PostgreSQL & MySQL, complemented by end-to-end client capabilities in Angular and Flutter.',
     github: 'https://github.com/Vishnu1562',
@@ -91,10 +91,10 @@ const initialState: PortfolioState = {
   ],
   experiences: [
     {
-      role: 'Full Stack Developer',
+      role: 'Consultant 1',
       company: 'EY GDS (Ernst & Young Global Delivery Services)',
-      location: 'Kerala, India',
-      period: 'Present',
+      location: 'Kochi, Kerala, India',
+      period: 'Oct 2023 – Present',
       badge: 'Enterprise Experience',
       summary:
         'Engineering mission-critical enterprise applications and developer productivity tooling for global clients and government ministries. Specialized in scalable backend architectures with NestJS and ASP.NET Core, paired with modern Angular SPAs.',
