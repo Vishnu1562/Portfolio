@@ -217,5 +217,20 @@ describe('Vishnu V - Portfolio Application (Behavioral Contract Tests)', () => {
       const mailtoLink = contactSection?.querySelector('a[href^="mailto:vishnuv2754@gmail.com"]');
       expect(mailtoLink).toBeTruthy();
     });
+
+    it('HF-010: should display verified Education details in the Experience section', () => {
+      const expText = compiled.querySelector('#experience')?.textContent || '';
+      expect(expText).toContain('Government Engineering College, Barton Hill');
+      expect(expText).toContain('Information Technology');
+      expect(expText).toContain('2019 – 2023');
+    });
+
+    it('HF-011: should display Microsoft GitHub Copilot certification in the Experience section', () => {
+      const expText = compiled.querySelector('#experience')?.textContent || '';
+      expect(expText).toContain('GitHub Copilot');
+      expect(expText).toContain('Microsoft');
+      expect(expText).toContain('DE17740A659BDD83');
+      expect(expText).toContain('Feb 2026');
+    });
   });
 });

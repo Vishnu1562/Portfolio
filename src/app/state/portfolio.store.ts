@@ -2,7 +2,7 @@ import { computed } from '@angular/core';
 import { patchState, signalStore, withComputed, withMethods, withState } from '@ngrx/signals';
 import { SkillCategory, SkillItem } from '../core/models/skill.model';
 import { ProjectItem } from '../core/models/project.model';
-import { ExperienceItem } from '../core/models/experience.model';
+import { CertificationItem, EducationItem, ExperienceItem } from '../core/models/experience.model';
 import { ContactFormData, PersonalInfo } from '../core/models/contact.model';
 
 export interface PortfolioState {
@@ -11,6 +11,8 @@ export interface PortfolioState {
   selectedCategory: SkillCategory;
   projects: ProjectItem[];
   experiences: ExperienceItem[];
+  education: EducationItem;
+  certifications: CertificationItem[];
   isMobileMenuOpen: boolean;
   resumeModalOpen: boolean;
   isSubmittingContact: boolean;
@@ -49,6 +51,24 @@ const initialState: PortfolioState = {
     { name: 'Postman', category: 'Cloud & Tools', level: 'Advanced', tag: 'API Testing', iconName: 'postman' },
     { name: 'IntelliJ IDEA Extension', category: 'Cloud & Tools', level: 'Advanced', tag: 'JetBrains SDK', iconName: 'intellij' },
     { name: 'Visual Studio Extension', category: 'Cloud & Tools', level: 'Advanced', tag: 'VSIX / Extensibility', iconName: 'vs' },
+    { name: 'GitHub Copilot', category: 'Cloud & Tools', level: 'Certified', tag: 'Microsoft Certified', iconName: 'copilot' },
+  ],
+  education: {
+    degree: 'Bachelor of Technology (BTech), Information Technology',
+    institution: 'Government Engineering College, Barton Hill, Thiruvananthapuram',
+    period: '2019 – 2023',
+    location: 'Kerala, India',
+    logoText: 'GEC Barton Hill',
+  },
+  certifications: [
+    {
+      title: 'GitHub Copilot',
+      issuer: 'Microsoft',
+      issueDate: 'Feb 2026',
+      expiryDate: 'Feb 2028',
+      credentialId: 'DE17740A659BDD83',
+      badge: 'Microsoft Certified',
+    },
   ],
   selectedCategory: 'All',
   projects: [

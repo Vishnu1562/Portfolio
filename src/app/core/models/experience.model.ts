@@ -8,3 +8,20 @@ export interface ExperienceItem {
   points: string[];
   technologies: string[];
 }
+
+export interface EducationItem {
+  degree: string;
+  institution: string;
+  period: string;
+  location: string;
+  logoText?: string;
+}
+
+export interface CertificationItem {
+  title: string;
+  issuer: string;
+  issueDate: string;
+  expiryDate: string;
+  credentialId: string;
+  badge: string;
+}

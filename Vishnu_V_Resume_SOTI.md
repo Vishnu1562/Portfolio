@@ -52,6 +52,11 @@ Software Developer with **3+ years** of enterprise engineering experience at **E
 
 ---
 
+## CERTIFICATIONS
+* **GitHub Copilot** &bull; **Microsoft** (Issued: Feb 2026 &bull; Expires: Feb 2028 &bull; Credential ID: `DE17740A659BDD83`)
+
+---
+
 ## EDUCATION
-**Bachelor of Technology in Computer Science & Engineering / Information Technology**  
-*Kerala, India*
+**Bachelor of Technology (B.Tech) in Information Technology**  
+*Government Engineering College, Barton Hill, Thiruvananthapuram, Kerala* &bull; *2019 – 2023*

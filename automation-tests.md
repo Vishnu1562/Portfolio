@@ -25,6 +25,8 @@ A high-performance, responsive single-page portfolio application that showcases 
   * GitHub: `https://github.com/Vishnu1562`
   * LinkedIn: `https://www.linkedin.com/in/vishnu-v-40a0/`
   * Honors: `National Sambo Champion (Gold in Combat Sambo, Bronze in Sports Sambo, April 2026), All-India Rank 1 Certified Referee (Grade A, FIAS)`
+  * Education: `Bachelor of Technology (B.Tech), Information Technology` at `Government Engineering College, Barton Hill, Thiruvananthapuram` (2019 – 2023)
+  * Certifications: `GitHub Copilot` by `Microsoft` (Issued Feb 2026, Expires Feb 2028, ID: `DE17740A659BDD83`)
 * **Contact Form Valid Input**:
   * Name: `Jane Doe`
   * Email: `jane.doe@example.com`
@@ -137,6 +139,26 @@ A high-performance, responsive single-page portfolio application that showcases 
   2. Direct mailto link is active and properly structured.
   3. Professional network links point to `linkedin.com/in/vishnu-v-40a0` and `github.com/Vishnu1562`.
 * **Final State**: User contact reach-out channels verified.
+
+### HF-010: Verified Academic Background (Education)
+* **Preconditions**: User navigates to `#experience` section or inspects education metadata.
+* **Actions**: Inspect Education details on the website and resumes.
+* **Expected Results**:
+  1. Displays degree: `Bachelor of Technology (B.Tech), Information Technology`.
+  2. Displays college: `Government Engineering College, Barton Hill, Thiruvananthapuram` (GEC Barton Hill).
+  3. Displays tenure: `2019 – 2023`.
+  4. Removes placeholder/generic degree text.
+* **Final State**: Verified educational background displayed accurately.
+
+### HF-011: Verified Microsoft Certifications (GitHub Copilot)
+* **Preconditions**: User navigates to `#experience` section or inspects certifications metadata.
+* **Actions**: Inspect Licenses & Certifications on the website and resumes.
+* **Expected Results**:
+  1. Displays certification: `GitHub Copilot`.
+  2. Displays issuing authority: `Microsoft`.
+  3. Displays credential period: `Issued Feb 2026 · Expires Feb 2028`.
+  4. Displays credential ID: `DE17740A659BDD83`.
+* **Final State**: Official Microsoft certification verified.
 
 ---
 
