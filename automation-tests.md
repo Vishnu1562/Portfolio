@@ -52,8 +52,8 @@ A high-performance, responsive single-page portfolio application that showcases 
   2. Click "View Projects" CTA.
   3. Click "Contact Me" CTA.
 * **Expected Results**:
-  1. Name "Vishnu V" and headline "Full Stack Developer" are prominently displayed in the Hero section without awkward inline employer tags.
-  2. Availability pill indicator is removed.
+  1. Name "Vishnu V" and headline "Consultant 1" are prominently displayed in the Hero section without awkward inline employer tags.
+  2. Single primary Resume action is maintained in the navigation header, removing duplicate hero resume buttons.
   3. "View Projects" scrolls smoothly to `#projects`.
   4. "Contact Me" scrolls smoothly to `#contact`.
 * **Final State**: Target section brought into view.

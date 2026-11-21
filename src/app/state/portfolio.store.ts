@@ -20,11 +20,11 @@ export interface PortfolioState {
 const initialState: PortfolioState = {
   personalInfo: {
     name: 'Vishnu V',
-    headline: 'Full Stack Developer',
+    headline: 'Consultant 1',
     company: 'EY GDS',
     location: 'Kochi, Kerala, India',
     status: 'Available for new opportunities',
-    bio: 'Full Stack Developer with a primary focus on scalable backend architecture, modular REST APIs, and in-IDE developer tooling with NestJS, TypeScript, and ASP.NET Core. Experienced in robust database modeling in PostgreSQL & MySQL, complemented by end-to-end client capabilities in Angular and Flutter.',
+    bio: 'Consultant 1 at EY GDS, specializing in scalable server-side architecture, modular REST APIs, and developer productivity tooling with NestJS, TypeScript, and ASP.NET Core. Experienced in delivering enterprise web platforms for public sector clients, including initiatives for the Saudi Ministry, alongside in-IDE developer extensions across IntelliJ IDEA and Visual Studio.',
     github: 'https://github.com/Vishnu1562',
     linkedin: 'https://www.linkedin.com/in/vishnu-v-40a0/',
     email: 'vishnuv2754@gmail.com',

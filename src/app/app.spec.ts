@@ -44,10 +44,10 @@ describe('Vishnu V - Portfolio Application (Behavioral Contract Tests)', () => {
   });
 
   describe('HF-002: Hero Section Display', () => {
-    it('should display Vishnu V and Full Stack Developer without inline company tag in intro', () => {
+    it('should display Vishnu V and Consultant 1 without inline company tag in intro', () => {
       const heroText = compiled.querySelector('#about')?.textContent || '';
       expect(heroText).toContain('Vishnu V');
-      expect(heroText).toContain('Full Stack Developer');
+      expect(heroText).toContain('Consultant 1');
       expect(compiled.querySelector('[data-testid="hero-company"]')).toBeNull();
     });
 
