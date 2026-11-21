@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vishnu V - Software Developer 2 Resume (SOTI)</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 12mm 15mm;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: #1e293b;
+      background: #ffffff;
+      line-height: 1.4;
+      font-size: 9.5pt;
+    }
+
+    .resume {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Header */
+    header {
+      border-bottom: 2px solid #0f172a;
+      padding-bottom: 8px;
+      margin-bottom: 11px;
+    }
+
+    h1 {
+      font-size: 21pt;
+      font-weight: 800;
+      color: #0f172a;
+      letter-spacing: -0.5px;
+      text-transform: uppercase;
+      margin-bottom: 2px;
+    }
+
+    .title {
+      font-size: 11pt;
+      font-weight: 600;
+      color: #2563eb;
+      margin-bottom: 5px;
+    }
+
+    .contact-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      font-size: 9pt;
+      color: #475569;
+    }
+
+    .contact-bar a {
+      color: #0f172a;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact-bar a:hover {
+      text-decoration: underline;
+    }
+
+    /* Section Styling */
+    section {
+      margin-bottom: 11px;
+    }
+
+    h2 {
+      font-size: 10.5pt;
+      font-weight: 700;
+      color: #0f172a;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      border-bottom: 1px solid #cbd5e1;
+      padding-bottom: 2px;
+      margin-bottom: 6px;
+    }
+
+    /* Summary */
+    p.summary {
+      font-size: 9.2pt;
+      color: #334155;
+      line-height: 1.45;
+      text-align: justify;
+    }
+
+    /* Skills Grid */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 155px 1fr;
+      gap: 3px 10px;
+      font-size: 9pt;
+    }
+
+    .skill-cat {
+      font-weight: 700;
+      color: #1e293b;
+    }
+
+    .skill-items {
+      color: #334155;
+    }
+
+    /* Experience & Projects */
+    .entry {
+      margin-bottom: 8px;
+    }
+
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2px;
+    }
+
+    .entry-title {
+      font-size: 10pt;
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    .entry-subtitle {
+      font-size: 9.5pt;
+      font-weight: 600;
+      color: #2563eb;
+    }
+
+    .entry-date {
+      font-size: 8.5pt;
+      color: #64748b;
+      font-weight: 500;
+      text-align: right;
+    }
+
+    ul.bullets {
+      margin-left: 16px;
+      margin-top: 2px;
+    }
+
+    ul.bullets li {
+      font-size: 9pt;
+      color: #334155;
+      margin-bottom: 2px;
+      line-height: 1.35;
+    }
+
+    ul.bullets li strong {
+      color: #0f172a;
+    }
+  </style>
+</head>
+<body>
+  <div class="resume">
+    <!-- Header -->
+    <header>
+      <h1>Vishnu V</h1>
+      <div class="title">Software Developer &bull; Backend &amp; Full-Stack Systems (C# .NET &amp; TypeScript)</div>
+      <div class="contact-bar">
+        <span>Kochi, Kerala, India</span>
+        <span><a href="mailto:vishnuv2754@gmail.com">vishnuv2754@gmail.com</a></span>
+        <span><a href="https://linkedin.com/in/vishnu-v-40a0">linkedin.com/in/vishnu-v-40a0</a></span>
+        <span><a href="https://github.com/Vishnu1562">github.com/Vishnu1562</a></span>
+      </div>
+    </header>
+
+    <!-- Professional Summary -->
+    <section>
+      <h2>Professional Summary</h2>
+      <p class="summary">
+        Software Developer with <strong>3+ years</strong> of enterprise engineering experience at <strong>EY GDS</strong>, specializing in robust server-side architecture, high-performance RESTful Web APIs, and full-stack enterprise applications using <strong>C# (ASP.NET Core / .NET 8)</strong>, <strong>TypeScript</strong>, <strong>Node.js (NestJS)</strong>, and <strong>Angular</strong>. Strong foundation in Object-Oriented Programming (<strong>OOP</strong>), <strong>SOLID</strong> design principles, Clean Architecture, and relational database modeling across <strong>SQL Server</strong> and <strong>PostgreSQL</strong>. Proven track record delivering mission-critical public sector systems (including the <strong>Saudi Ministry</strong>) and engineering in-IDE developer productivity extensions for <strong>Visual Studio</strong> and <strong>IntelliJ IDEA</strong> within collaborative Agile/Scrum environments.
+      </p>
+    </section>
+
+    <!-- Technical Skills -->
+    <section>
+      <h2>Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-cat">Languages &amp; Frameworks:</div>
+        <div class="skill-items">C#, ASP.NET Core (.NET 8/9), TypeScript, JavaScript (ES6+), NestJS, Node.js, Angular (v16–v21), HTML5, SCSS</div>
+
+        <div class="skill-cat">Architecture &amp; Principles:</div>
+        <div class="skill-items">Object-Oriented Programming (OOP), SOLID Principles, Clean Architecture, Repository Pattern, Dependency Injection (IoC), RESTful API Design</div>
+
+        <div class="skill-cat">Databases &amp; ORM:</div>
+        <div class="skill-items">SQL Server, PostgreSQL, SQLite, Entity Framework Core (EF Core), TypeORM, Query Optimization &amp; Indexing</div>
+
+        <div class="skill-cat">Developer Tooling:</div>
+        <div class="skill-items">Visual Studio Extension (VSIX), IntelliJ IDEA Plugin SDK, VS Code API, Postman</div>
+
+        <div class="skill-cat">DevOps &amp; Practices:</div>
+        <div class="skill-items">Git, GitHub, Azure DevOps (CI/CD Pipelines, Repos, Boards), GitHub Actions, Agile/Scrum Methodologies, Code Reviews</div>
+      </div>
+    </section>
+
+    <!-- Professional Experience -->
+    <section>
+      <h2>Professional Experience</h2>
+      <div class="entry">
+        <div class="entry-header">
+          <div>
+            <span class="entry-title">Consultant 1</span> &bull; <span class="entry-subtitle">EY (Ernst &amp; Young Global Delivery Services)</span>
+          </div>
+          <span class="entry-date">Kochi, Kerala, India | Oct 2023 – Present (3+ years)</span>
+        </div>
+        <ul class="bullets">
+          <li>
+            <strong>High-Performance C# &amp; ASP.NET Core Web APIs:</strong> Engineered robust, high-throughput RESTful Web APIs using <strong>C#</strong>, <strong>ASP.NET Core (.NET 8/9)</strong>, and <strong>Entity Framework Core</strong>, applying Clean Architecture, repository patterns, dependency injection, and database query optimizations for <strong>SQL Server</strong> and <strong>PostgreSQL</strong>.
+          </li>
+          <li>
+            <strong>Government &amp; Enterprise Web Platforms (Saudi Ministry):</strong> Architected and deployed secure, scalable backend services and responsive administrative portals for high-compliance public sector initiatives, ensuring role-based access control (RBAC), strict data validation, and clean architectural separation.
+          </li>
+          <li>
+            <strong>Modular NestJS &amp; Node.js Backend Services:</strong> Developed modular, maintainable backend micro-modules using <strong>NestJS</strong> and <strong>TypeScript</strong>, implementing custom middleware guards, interceptors, and structured exception filters.
+          </li>
+          <li>
+            <strong>In-IDE Developer Productivity Extensions:</strong> Engineered custom in-IDE developer productivity extensions for both <strong>Visual Studio</strong> (VSIX) and <strong>IntelliJ IDEA</strong> (JetBrains Plugin SDK) to standardize development workflows, generating reusable boilerplate and intelligent code templates.
+          </li>
+          <li>
+            <strong>Frontend Client SPAs:</strong> Developed responsive, accessible Single Page Applications (SPAs) with <strong>Angular (v16–v21)</strong> and <strong>NgRx</strong>, ensuring modular component architecture, reactive state flows, and maintainable styling.
+          </li>
+          <li>
+            <strong>Agile Delivery &amp; DevOps Collaboration:</strong> Collaborated in cross-functional Agile/Scrum sprints, managed automated CI/CD release pipelines in <strong>Azure DevOps</strong> and <strong>GitHub Actions</strong>, conducted peer code reviews, and validated API contracts using Postman.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Personal Projects -->
+    <section>
+      <h2>Personal Projects</h2>
+
+      <div class="entry">
+        <div class="entry-header">
+          <div>
+            <span class="entry-title">Martial Arts Event Manager Platform</span> &bull; <a href="https://github.com/Vishnu1562" style="color:#2563eb; font-size:8.8pt; text-decoration:none;">github.com/Vishnu1562</a>
+          </div>
+          <span class="entry-date">NestJS 11 &bull; Angular 21 &bull; TypeORM &bull; PostgreSQL &bull; Tailwind CSS</span>
+        </div>
+        <ul class="bullets">
+          <li>Engineered a full-stack tournament management platform featuring a dynamic form builder powered by an Entity-Attribute-Value (EAV) schema to customize registration fields per event.</li>
+          <li>Implemented hierarchical jurisdictional role-based access control (Country &rarr; State &rarr; District) with automated SQL query interception and multi-regional duplicate participant scanning algorithms.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <div>
+            <span class="entry-title">Multi-Profile Job Radar (Automated Job Scanner &amp; Digest Bot)</span> &bull; <a href="https://github.com/Vishnu1562/Job_Bot" style="color:#2563eb; font-size:8.8pt; text-decoration:none;">github.com/Vishnu1562/Job_Bot</a>
+          </div>
+          <span class="entry-date">Node.js &bull; TypeScript &bull; SQLite &bull; GitHub Actions &bull; Nodemailer</span>
+        </div>
+        <ul class="bullets">
+          <li>Built an automated daily job scanning engine aggregating multi-source developer feeds across tailored skill profiles with regex-based skill extraction.</li>
+          <li>Engineered persistent deduplication via an embedded SQLite database and orchestrated zero-overhead 24/7 cloud execution through scheduled GitHub Actions cron workflows dispatching responsive HTML digests.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section>
+      <h2>Education</h2>
+      <div class="entry">
+        <div class="entry-header">
+          <div>
+            <span class="entry-title">Bachelor of Technology in Computer Science &amp; Engineering / Information Technology</span>
+          </div>
+          <span class="entry-date">Kerala, India</span>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
