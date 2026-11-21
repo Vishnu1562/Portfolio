@@ -21,6 +21,7 @@ A high-performance, responsive single-page portfolio application that showcases 
   * Role: `Consultant 1`
   * Company: `EY GDS`
   * Location: `Kochi, Kerala, India`
+  * Phone: `+91 8078854995`
   * Email: `vishnuv2754@gmail.com`
   * GitHub: `https://github.com/Vishnu1562`
   * LinkedIn: `https://www.linkedin.com/in/vishnu-v-40a0/`
@@ -98,8 +99,9 @@ A high-performance, responsive single-page portfolio application that showcases 
 * **Expected Results**:
   1. Opens the CV modal and triggers download of the industry standard PDF resume (`Vishnu_V_Resume.pdf`).
   2. Resume content follows clean ATS standards with zero decorative emojis (`📍`, `📧`, `🔗`, `💻`, `📌`, `🛠️`, `💼`, `🚀`, `🎓`) and removes generic AI fluff.
-  3. Clearly separates EY GDS Enterprise Experience from Independent/Personal Projects, giving priority to EY GDS.
-  4. Omits unverified skills (no microservices, no AST, no testing suites).
+  3. Clearly presents verified contact information including phone (`+91 8078854995`), email (`vishnuv2754@gmail.com`), location (`Kochi, Kerala, India`), LinkedIn, and GitHub.
+  4. Clearly separates EY GDS Enterprise Experience from Independent/Personal Projects, giving priority to EY GDS.
+  5. Omits unverified skills (no microservices, no AST, no testing suites).
 * **Final State**: ATS-compliant resume download initiated without error.
 
 ### HF-006: Contact Form Successful Submission

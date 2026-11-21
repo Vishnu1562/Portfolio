@@ -15,4 +15,5 @@ export interface PersonalInfo {
   github: string;
   linkedin: string;
   email: string;
+  phone?: string;
 }

@@ -1,6 +1,6 @@
 # VISHNU V
 **Consultant 1**  
-Kochi, Kerala, India &bull; [vishnuv2754@gmail.com](mailto:vishnuv2754@gmail.com) &bull; [linkedin.com/in/vishnu-v-40a0](https://linkedin.com/in/vishnu-v-40a0) &bull; [github.com/Vishnu1562](https://github.com/Vishnu1562)
+Kochi, Kerala, India &bull; +91 8078854995 &bull; [vishnuv2754@gmail.com](mailto:vishnuv2754@gmail.com) &bull; [linkedin.com/in/vishnu-v-40a0](https://linkedin.com/in/vishnu-v-40a0) &bull; [github.com/Vishnu1562](https://github.com/Vishnu1562)
 
 ---
 

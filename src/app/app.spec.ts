@@ -232,5 +232,9 @@ describe('Vishnu V - Portfolio Application (Behavioral Contract Tests)', () => {
       expect(expText).toContain('DE17740A659BDD83');
       expect(expText).toContain('Feb 2026');
     });
+
+    it('HF-012: should store verified phone number in personalInfo state', () => {
+      expect(component.store.personalInfo().phone).toBe('+91 8078854995');
+    });
   });
 });

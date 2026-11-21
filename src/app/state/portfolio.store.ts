@@ -30,6 +30,7 @@ const initialState: PortfolioState = {
     github: 'https://github.com/Vishnu1562',
     linkedin: 'https://www.linkedin.com/in/vishnu-v-40a0/',
     email: 'vishnuv2754@gmail.com',
+    phone: '+91 8078854995',
   },
   skills: [
     { name: 'Angular', category: 'Frontend', level: 'Expert', tag: 'v16 - v19', iconName: 'angular' },
