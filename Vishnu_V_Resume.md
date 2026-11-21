@@ -5,7 +5,7 @@ Kochi, Kerala, India &bull; [vishnuv2754@gmail.com](mailto:vishnuv2754@gmail.com
 ---
 
 ## PROFESSIONAL SUMMARY
-Full Stack Developer with enterprise consulting experience at **EY GDS**, specializing in scalable server-side architecture, modular REST APIs, and developer productivity tooling with **NestJS (TypeScript)**, **Node.js**, and **ASP.NET Core (C#)**. Proven track record building enterprise web platforms for public sector clients, including initiatives for the **Saudi Ministry**, alongside in-IDE developer productivity extensions for **IntelliJ IDEA** and **Visual Studio / VS Code**. Experienced in relational database modeling with **PostgreSQL** and **SQL Server**, coupled with full-stack capability delivering responsive client interfaces in **Angular**.
+Software Developer with **3+ years** of enterprise engineering experience at **EY GDS**, specializing in robust server-side architecture, high-performance RESTful Web APIs, and full-stack enterprise applications using **C# (ASP.NET Core / .NET 8)**, **TypeScript**, **Node.js (NestJS)**, and **Angular**. Strong foundation in Object-Oriented Programming (**OOP**), **SOLID** design principles, Clean Architecture, and relational database modeling across **SQL Server** and **PostgreSQL**. Proven track record delivering mission-critical public sector systems (including the **Saudi Ministry**) and engineering in-IDE developer productivity extensions for **Visual Studio** and **IntelliJ IDEA** within collaborative Agile/Scrum environments.
 
 ---
 
