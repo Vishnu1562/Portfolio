@@ -20,10 +20,8 @@ Full Stack Developer with enterprise consulting experience at **EY GDS**, specia
 
 ## PROFESSIONAL EXPERIENCE
 
-### **EY (Ernst & Young Global Delivery Services)** | Kochi, Kerala, India
-* **Consultant 1** (*Oct 2026 – Present*)  
-* **Associate Consultant 2** (*Oct 2025 – Oct 2026*)  
-* **Associate Consultant** (*Oct 2023 – Oct 2025*)  
+### **Consultant 1** | **EY (Ernst & Young Global Delivery Services)**
+*Kochi, Kerala, India* &bull; *Oct 2023 – Present*  
 
 * **Government & Enterprise Web Platforms (Saudi Ministry)**: Architected and developed secure, scalable backend services and responsive client portals for public sector initiatives, including enterprise platforms for the **Saudi Ministry**, ensuring role-based access control, data validation, and clean RESTful API standards.
 * **In-IDE Developer Productivity Extensions**: Engineered custom in-IDE developer productivity extensions for both **IntelliJ IDEA** (JetBrains Plugin SDK) and **Visual Studio / VS Code** as part of an enterprise initiative. Implemented custom code generation, templates, and intelligent code completions to accelerate developer productivity across teams.
