@@ -46,6 +46,12 @@ Software Developer with **3+ years** of enterprise engineering experience at **E
 
 ---
 
+## HONORS & ATHLETIC ACHIEVEMENTS
+* **National Sambo Champion & Gold Medalist (Combat Sambo)**: Crowned National Champion after securing 1st place (Gold Medal in Combat Sambo) and Bronze Medal in Sports Sambo at the National Sambo Championship (Calicut, April 2026).
+* **All-India Rank 1 Certified Referee**: Secured First Rank nationally in the National Sambo Referee Examination conducted by the Sambo India Association, affiliated with the International SAMBO Federation (FIAS) and accredited as a Grade A Referee.
+
+---
+
 ## EDUCATION
 **Bachelor of Technology in Computer Science & Engineering / Information Technology**  
 *Kerala, India*

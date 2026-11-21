@@ -18,11 +18,13 @@ A high-performance, responsive single-page portfolio application that showcases 
 ## Test Data
 * **User Profile**:
   * Name: `Vishnu V`
-  * Role: `Full Stack Developer`
+  * Role: `Consultant 1`
   * Company: `EY GDS`
-  * Location: `Kerala, India`
+  * Location: `Kochi, Kerala, India`
+  * Email: `vishnuv2754@gmail.com`
   * GitHub: `https://github.com/Vishnu1562`
   * LinkedIn: `https://www.linkedin.com/in/vishnu-v-40a0/`
+  * Honors: `National Sambo Champion (Gold in Combat Sambo, Bronze in Sports Sambo, April 2026), All-India Rank 1 Certified Referee (Grade A, FIAS)`
 * **Contact Form Valid Input**:
   * Name: `Jane Doe`
   * Email: `jane.doe@example.com`
@@ -118,6 +120,23 @@ A high-performance, responsive single-page portfolio application that showcases 
   3. Highlights enterprise web applications and API platforms engineered for public sector clients including the Saudi Ministry.
   4. Displays associated technologies: NestJS, ASP.NET Core, IntelliJ Plugin SDK, Visual Studio (VSIX), PostgreSQL, Angular.
 * **Final State**: Enterprise experience details verified.
+
+### HF-008: Honors & Athletic Leadership (National Sambo Champion)
+* **Preconditions**: User navigates to `#experience` section.
+* **Actions**: Inspect Honors & Athletic Leadership card.
+* **Expected Results**:
+  1. Displays National Sambo Champion (Gold Medal in Combat Sambo, Bronze Medal in Sports Sambo, April 2026).
+  2. Displays All-India Rank 1 Certified Referee (Grade A Referee, FIAS affiliated).
+* **Final State**: Athletic honors and domain authority verified.
+
+### HF-009: Verified Contact Details & Direct Email Reach-out
+* **Preconditions**: User navigates to `#contact` section.
+* **Actions**: Inspect contact channels.
+* **Expected Results**:
+  1. Contact information reflects verified email `vishnuv2754@gmail.com`.
+  2. Direct mailto link is active and properly structured.
+  3. Professional network links point to `linkedin.com/in/vishnu-v-40a0` and `github.com/Vishnu1562`.
+* **Final State**: User contact reach-out channels verified.
 
 ---
 

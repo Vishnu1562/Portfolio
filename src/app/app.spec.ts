@@ -202,5 +202,20 @@ describe('Vishnu V - Portfolio Application (Behavioral Contract Tests)', () => {
       expect(filtered.some((s) => s.name === 'IntelliJ IDEA Extension')).toBe(true);
       expect(filtered.some((s) => s.name === 'Visual Studio Extension')).toBe(true);
     });
+
+    it('HF-008: should display Honors & Athletic Leadership card in the Experience section', () => {
+      const expText = compiled.querySelector('#experience')?.textContent || '';
+      expect(expText).toContain('National Sambo Champion');
+      expect(expText).toContain('Combat Sambo');
+      expect(expText).toContain('Rank 1 Certified Referee');
+      expect(expText).toContain('April 2026');
+    });
+
+    it('HF-009: should display direct verified email contact card in the Contact section', () => {
+      const contactSection = compiled.querySelector('#contact');
+      expect(contactSection?.textContent).toContain('vishnuv2754@gmail.com');
+      const mailtoLink = contactSection?.querySelector('a[href^="mailto:vishnuv2754@gmail.com"]');
+      expect(mailtoLink).toBeTruthy();
+    });
   });
 });

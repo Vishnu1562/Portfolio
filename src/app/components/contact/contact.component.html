@@ -55,6 +55,25 @@
         </div>
       </a>
 
+      <!-- Direct Email Card -->
+      <a
+        [href]="'mailto:' + store.personalInfo().email"
+        class="glass-card p-5 rounded-2xl block hover:border-cyan-500/40 transition-all group"
+      >
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 group-hover:scale-105 transition-transform">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+          <div>
+            <span class="text-xs font-mono text-slate-400">Direct Email</span>
+            <h4 class="text-base font-bold text-white group-hover:text-cyan-300">{{ store.personalInfo().email }}</h4>
+            <p class="text-xs text-slate-400">Reach out directly via email</p>
+          </div>
+        </div>
+      </a>
+
       <!-- Location Card -->
       <div class="glass-card p-5 rounded-2xl flex items-center gap-4">
         <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400">

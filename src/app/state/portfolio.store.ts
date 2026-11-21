@@ -24,7 +24,7 @@ const initialState: PortfolioState = {
     company: 'EY GDS',
     location: 'Kochi, Kerala, India',
     status: 'Available for new opportunities',
-    bio: 'Consultant 1 at EY GDS, specializing in scalable server-side architecture, modular REST APIs, and developer productivity tooling with NestJS, TypeScript, and ASP.NET Core. Experienced in delivering enterprise web platforms for public sector clients, including initiatives for the Saudi Ministry, alongside in-IDE developer extensions across IntelliJ IDEA and Visual Studio.',
+    bio: 'Consultant 1 at EY GDS and National Sambo Champion (Gold Medalist & All-India Rank 1 Certified Referee), specializing in scalable server-side architecture, modular REST APIs, and developer productivity tooling with NestJS, TypeScript, and ASP.NET Core. Experienced in delivering enterprise web platforms for public sector clients, including initiatives for the Saudi Ministry, alongside in-IDE developer extensions across IntelliJ IDEA and Visual Studio.',
     github: 'https://github.com/Vishnu1562',
     linkedin: 'https://www.linkedin.com/in/vishnu-v-40a0/',
     email: 'vishnuv2754@gmail.com',
@@ -72,9 +72,9 @@ const initialState: PortfolioState = {
     },
     {
       title: 'Martial Arts Event Manager Platform',
-      subtitle: 'Personal Project • Tournament & Registration Management',
+      subtitle: 'Personal Project • Tournament & Registration Management (Built by National Sambo Champion)',
       description:
-        'Full-stack sports tournament platform featuring dynamic registration form builders, automated inter-regional duplicate participant detection, and hierarchical jurisdictional access control.',
+        'Full-stack sports tournament platform featuring dynamic registration form builders, automated inter-regional duplicate participant detection, and hierarchical jurisdictional access control. Built with domain expertise following victory at the National Sambo Championship (Calicut, April 2026).',
       techStack: ['NestJS', 'Angular', 'TypeScript', 'TypeORM', 'PostgreSQL', 'Tailwind CSS'],
       githubUrl: 'https://github.com/Vishnu1562',
       architecture: 'Entity-Attribute-Value (EAV) dynamic schemas with automated multi-tier jurisdictional SQL query interception.',
