@@ -27,7 +27,7 @@ const initialState: PortfolioState = {
     bio: 'Full Stack Developer with a primary focus on scalable backend architecture, modular REST APIs, and in-IDE developer tooling with NestJS, TypeScript, and ASP.NET Core. Experienced in robust database modeling in PostgreSQL & MySQL, complemented by end-to-end client capabilities in Angular and Flutter.',
     github: 'https://github.com/Vishnu1562',
     linkedin: 'https://www.linkedin.com/in/vishnu-v-40a0/',
-    email: 'vishnu.v.dev@outlook.com',
+    email: 'vishnuv2754@gmail.com',
   },
   skills: [
     { name: 'Angular', category: 'Frontend', level: 'Expert', tag: 'v16 - v19', iconName: 'angular' },

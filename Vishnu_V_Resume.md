@@ -1,6 +1,6 @@
 # VISHNU V
-**Full Stack Developer** &bull; Backend Specialization (NestJS & ASP.NET Core)  
-Kochi, Kerala, India &bull; [vishnu.v.dev@outlook.com](mailto:vishnu.v.dev@outlook.com) &bull; [linkedin.com/in/vishnu-v-40a0](https://linkedin.com/in/vishnu-v-40a0) &bull; [github.com/Vishnu1562](https://github.com/Vishnu1562)
+**Consultant 1**  
+Kochi, Kerala, India &bull; [vishnuv2754@gmail.com](mailto:vishnuv2754@gmail.com) &bull; [linkedin.com/in/vishnu-v-40a0](https://linkedin.com/in/vishnu-v-40a0) &bull; [github.com/Vishnu1562](https://github.com/Vishnu1562)
 
 ---
 
