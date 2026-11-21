@@ -53,40 +53,40 @@ const initialState: PortfolioState = {
   selectedCategory: 'All',
   projects: [
     {
-      title: 'Martial Arts Event Manager Platform',
-      subtitle: 'Full Stack Tournament & Sports Administration System',
+      title: 'Saudi Ministry & Government Web Applications',
+      subtitle: 'EY GDS Enterprise Project • Public Sector Portals & APIs',
       description:
-        'Scalable sports tournament management system featuring dynamic registration form builders, automated inter-regional duplicate participant detection, and hierarchical jurisdictional access control.',
-      techStack: ['NestJS', 'Angular', 'TypeScript', 'TypeORM', 'PostgreSQL', 'Tailwind CSS', 'Vitest'],
+        'Enterprise-grade government services and RESTful Web APIs developed for the Saudi Ministry and public sector initiatives, ensuring strict role-based data governance, secure validation, and high availability.',
+      techStack: ['NestJS', 'ASP.NET Core', 'C#', '.NET 8/9', 'PostgreSQL', 'SQL Server', 'Clean Architecture'],
+      githubUrl: 'https://github.com/Vishnu1562',
+      architecture: 'Clean Architecture with repository patterns, modular domain design, and strict role-based access control.',
+    },
+    {
+      title: 'Developer Productivity IDE Extensions',
+      subtitle: 'EY GDS Strategic Initiative • In-IDE Developer Tooling',
+      description:
+        'Custom developer productivity extensions engineered for IntelliJ IDEA (JetBrains Plugin SDK) and Visual Studio / VS Code, integrating custom code generation, templates, and intelligent code completions to accelerate developer velocity.',
+      techStack: ['IntelliJ Plugin SDK', 'Visual Studio (VSIX)', 'VS Code API', 'TypeScript', 'Java'],
+      githubUrl: 'https://github.com/Vishnu1562',
+      architecture: 'Event-driven IDE extensibility integrating directly with editor actions and developer tooling APIs.',
+    },
+    {
+      title: 'Martial Arts Event Manager Platform',
+      subtitle: 'Personal Project • Tournament & Registration Management',
+      description:
+        'Full-stack sports tournament platform featuring dynamic registration form builders, automated inter-regional duplicate participant detection, and hierarchical jurisdictional access control.',
+      techStack: ['NestJS', 'Angular', 'TypeScript', 'TypeORM', 'PostgreSQL', 'Tailwind CSS'],
       githubUrl: 'https://github.com/Vishnu1562',
       architecture: 'Entity-Attribute-Value (EAV) dynamic schemas with automated multi-tier jurisdictional SQL query interception.',
     },
     {
       title: 'Multi-Profile Job Radar Bot',
-      subtitle: 'Automated Job Aggregator & Serverless Cloud Dispatcher',
+      subtitle: 'Personal Project • Automated Job Scanner & Cloud Dispatcher',
       description:
         'Automated scanner aggregating remote developer feeds across customizable domain profiles, performing regex skill extraction, persistent SQLite deduplication, and scheduled email digest delivery.',
       techStack: ['Node.js', 'TypeScript', 'SQLite', 'GitHub Actions', 'REST APIs', 'Nodemailer'],
       githubUrl: 'https://github.com/Vishnu1562/Job_Bot',
       architecture: 'Serverless 24/7 cron-driven automation via GitHub Actions with persistent file-backed SQLite deduplication.',
-    },
-    {
-      title: 'Saudi Ministry & Government Web Applications',
-      subtitle: 'Mission-Critical Public Sector Enterprise Portals & APIs',
-      description:
-        'Enterprise-grade government services and high-throughput RESTful APIs developed for the Saudi Ministry and public sector initiatives, ensuring strict multi-tenancy, regulatory compliance, and audit logging.',
-      techStack: ['NestJS', 'ASP.NET Core', 'C#', '.NET 8/9', 'PostgreSQL', 'SQL Server', 'Clean Architecture'],
-      githubUrl: 'https://github.com/Vishnu1562',
-      architecture: 'Clean Architecture with repository patterns, domain-driven design, and strict role-based data governance.',
-    },
-    {
-      title: 'Developer Productivity IDE Extensions',
-      subtitle: 'In-IDE Code Intelligence & Workflow Automation Tooling',
-      description:
-        'Custom developer productivity extensions engineered for IntelliJ IDEA and Visual Studio / VS Code, integrating AST-based syntax analysis, intelligent code completions, and automated enterprise boilerplate generation.',
-      techStack: ['IntelliJ Plugin SDK', 'Visual Studio (VSIX)', 'VS Code API', 'TypeScript', 'Java', 'AST Parsing'],
-      githubUrl: 'https://github.com/Vishnu1562',
-      architecture: 'Event-driven IDE extensibility integrating with compiler daemon hooks and editor language servers.',
     },
   ],
   experiences: [
@@ -99,11 +99,11 @@ const initialState: PortfolioState = {
       summary:
         'Engineering mission-critical enterprise applications and developer productivity tooling for global clients and government ministries. Specialized in scalable backend architectures with NestJS and ASP.NET Core, paired with modern Angular SPAs.',
       points: [
-        'Architected and deployed scalable backend services and secure web applications for public sector initiatives, including enterprise platforms for the Saudi Ministry, adhering to strict data compliance and security protocols.',
-        'Engineered intelligent, real-time in-IDE developer productivity extensions for both IntelliJ IDEA (JetBrains Plugin SDK) and Visual Studio / VS Code as part of a strategic client engagement, integrating AST syntax inspection and automated boilerplate generation.',
-        'Engineered high-throughput RESTful Web APIs using ASP.NET Core (.NET 8/9) and NestJS, implementing Clean Architecture, repository patterns, and query optimizations for PostgreSQL and SQL Server.',
-        'Delivered responsive Single Page Applications (SPAs) with Angular (v16–v21), reactive state management (Signals & NgRx), and modular styling for enterprise client portals.',
-        'Integrated automated testing, CI/CD pipelines via Azure DevOps and GitHub Actions, enforcing strict linting, type-safety, and code review standards.',
+        'Architected and deployed secure, scalable backend services and responsive client portals for public sector initiatives, including enterprise platforms for the Saudi Ministry, adhering to strict data validation and security protocols.',
+        'Engineered custom, real-time in-IDE developer productivity extensions for both IntelliJ IDEA (JetBrains Plugin SDK) and Visual Studio / VS Code as part of an enterprise initiative, implementing custom code generation, templates, and intelligent completions.',
+        'Engineered RESTful Web APIs using ASP.NET Core (.NET 8/9) and NestJS, implementing Clean Architecture, repository patterns, and query optimizations for PostgreSQL and SQL Server.',
+        'Delivered responsive Single Page Applications (SPAs) with Angular (v16–v21) and NgRx, ensuring modular component architecture and maintainable styling for enterprise client portals.',
+        'Managed CI/CD release pipelines in Azure DevOps and GitHub Actions, conducted Postman API validation, performed regular code reviews, and enforced strict type-safety standards.',
       ],
       technologies: [
         'NestJS',

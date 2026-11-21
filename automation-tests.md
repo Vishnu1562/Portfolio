@@ -71,14 +71,20 @@ A high-performance, responsive single-page portfolio application that showcases 
   2. Category button shows active visual state.
 * **Final State**: Filtered list matches selected tag.
 
-### HF-004: Featured Projects Exploration
+### HF-004: Featured Projects Exploration & Categorization
 * **Preconditions**: User is in the `#projects` section.
 * **Actions**:
-  1. Inspect project cards: `Martial Arts Event Manager Platform`, `Multi-Profile Job Radar`, `Saudi Ministry & Government Web Applications`, `Developer Productivity IDE Extensions`.
-  2. Click project link on a project card.
+  1. Inspect project cards: Clear division between Enterprise EY GDS work and Personal Projects.
+  2. Projects listed:
+     - `Saudi Ministry & Government Web Applications` (EY GDS Client Initiative)
+     - `Developer Productivity IDE Extensions` (EY GDS Strategic Initiative)
+     - `Martial Arts Event Manager Platform` (Personal Project)
+     - `Multi-Profile Job Radar Bot` (Personal Project)
+  3. Click project link on a project card.
 * **Expected Results**:
-  1. Cards render title, subtitle, description, technology badges, and architectural details highlighting full-stack NestJS/Angular, automation, enterprise government portals, and in-IDE developer extensions.
-  2. External links open with `target="_blank"` and `rel="noopener noreferrer"`.
+  1. Cards accurately describe real implementations without buzzwords (no microservices, no AST, no test suites claim).
+  2. Prioritizes EY GDS enterprise client work above personal projects.
+  3. External links open with `target="_blank"` and `rel="noopener noreferrer"`.
 * **Final State**: Correct project links and cards verified.
 
 ### HF-005: Resume Download / View (Industry ATS Standard)
@@ -88,7 +94,8 @@ A high-performance, responsive single-page portfolio application that showcases 
 * **Expected Results**:
   1. Opens the CV modal and triggers download of the industry standard PDF resume (`Vishnu_V_Resume.pdf`).
   2. Resume content follows clean ATS standards with zero decorative emojis (`📍`, `📧`, `🔗`, `💻`, `📌`, `🛠️`, `💼`, `🚀`, `🎓`) and removes generic AI fluff.
-  3. Resume highlights enterprise accomplishments (EY GDS, Saudi Ministry projects, IDE extensions) and technical projects (Martial Arts Event Manager, Multi-Profile Job Radar).
+  3. Clearly separates EY GDS Enterprise Experience from Independent/Personal Projects, giving priority to EY GDS.
+  4. Omits unverified skills (no microservices, no AST, no testing suites).
 * **Final State**: ATS-compliant resume download initiated without error.
 
 ### HF-006: Contact Form Successful Submission
