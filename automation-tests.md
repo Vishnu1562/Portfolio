@@ -85,6 +85,7 @@ A high-performance, responsive single-page portfolio application that showcases 
      - `Developer Productivity IDE Extensions` (EY GDS Strategic Initiative)
      - `Martial Arts Event Manager Platform` (Personal Project)
      - `Multi-Profile Job Radar Bot` (Personal Project)
+     - `AI Resume Tailor — Chrome Extension` (Personal Project)
   3. Click project link on a project card.
 * **Expected Results**:
   1. Cards accurately describe real implementations without buzzwords (no microservices, no AST, no test suites claim).
@@ -161,6 +162,16 @@ A high-performance, responsive single-page portfolio application that showcases 
   3. Displays credential period: `Issued Feb 2026 · Expires Feb 2028`.
   4. Displays credential ID: `DE17740A659BDD83`.
 * **Final State**: Official Microsoft certification verified.
+
+### HF-013: AI Resume Tailor Project Showcase
+* **Preconditions**: User navigates to `#projects` section or inspects project list.
+* **Actions**: Inspect `AI Resume Tailor — Chrome Extension` project card.
+* **Expected Results**:
+  1. Displays title: `AI Resume Tailor — Chrome Extension`.
+  2. Highlights Manifest V3 side panel architecture, multi-LLM cascading (Google Gemini Flash & Groq Llama 3.3 70B), and anti-hallucination grounding.
+  3. Lists technologies: TypeScript, Manifest V3, Gemini API, Groq, PDF.js, Vitest.
+  4. Links directly to `https://github.com/Vishnu1562/AI_Resume_Tailor`.
+* **Final State**: AI Resume Tailor project verified on website and resumes.
 
 ---
 

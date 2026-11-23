@@ -118,6 +118,15 @@ describe('Vishnu V - Portfolio Application (Behavioral Contract Tests)', () => {
       expect(ideTooling).toBeDefined();
     });
 
+    it('HF-013: should display AI Resume Tailor Chrome Extension in featured projects', () => {
+      const projects = component.projects();
+      const aiTailor = projects.find((p) => p.title.includes('AI Resume Tailor'));
+      expect(aiTailor).toBeDefined();
+      expect(aiTailor?.techStack).toContain('TypeScript');
+      expect(aiTailor?.techStack).toContain('Manifest V3');
+      expect(aiTailor?.githubUrl).toContain('Vishnu1562/AI_Resume_Tailor');
+    });
+
     it('should ensure all project GitHub links have rel="noopener noreferrer" and target="_blank"', () => {
       const projectLinks = compiled.querySelectorAll('#projects a[target="_blank"]');
       expect(projectLinks.length).toBeGreaterThanOrEqual(4);

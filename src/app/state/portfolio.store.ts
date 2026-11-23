@@ -101,6 +101,15 @@ const initialState: PortfolioState = {
       architecture: 'Entity-Attribute-Value (EAV) dynamic schemas with automated multi-tier jurisdictional SQL query interception.',
     },
     {
+      title: 'AI Resume Tailor — Chrome Extension',
+      subtitle: 'Personal Project • Manifest V3 & Multi-LLM Engine',
+      description:
+        'Privacy-first Chrome Side Panel extension that scans active job postings across LinkedIn, Workday, and Greenhouse, evaluates ATS keyword coverage, and tailors resumes using free Gemini Flash & Groq models with strict anti-hallucination grounding.',
+      techStack: ['TypeScript', 'Manifest V3', 'Gemini API', 'Groq (Llama 3.3)', 'PDF.js', 'Vitest'],
+      githubUrl: 'https://github.com/Vishnu1562/AI_Resume_Tailor',
+      architecture: 'Client-side Manifest V3 service worker and side panel architecture with dynamic multi-model cascading and zero-telemetry local storage.',
+    },
+    {
       title: 'Multi-Profile Job Radar Bot',
       subtitle: 'Personal Project • Automated Job Scanner & Cloud Dispatcher',
       description:

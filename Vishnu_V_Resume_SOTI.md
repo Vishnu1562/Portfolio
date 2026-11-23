@@ -34,6 +34,11 @@ Software Developer with **3+ years** of enterprise engineering experience at **E
 
 ## PERSONAL PROJECTS
 
+### **AI Resume Tailor (Chrome Extension & Free Multi-LLM Engine)** | [GitHub Repository](https://github.com/Vishnu1562/AI_Resume_Tailor)
+*Tech Stack: TypeScript, Chrome Extension (Manifest V3), Google Gemini Flash API, Groq (Llama 3.3 70B), PDF.js, Vitest*
+* Engineered a privacy-first Chrome Side Panel extension utilizing Manifest V3 to perform real-time ATS keyword matching and contextual resume tailoring against active job boards.
+* Architected multi-LLM cascading inference with dynamic Google AI Studio model auto-discovery, Groq failover, strict anti-hallucination prompt grounding, and client-side ATS PDF export.
+
 ### **Martial Arts Event Manager Platform** | [GitHub Repository](https://github.com/Vishnu1562)
 *Tech Stack: NestJS 11, Angular 21, TypeScript, TypeORM, PostgreSQL, Tailwind CSS*
 * Engineered a full-stack tournament management platform featuring a dynamic form builder powered by an Entity-Attribute-Value (EAV) schema to customize registration fields per event.
