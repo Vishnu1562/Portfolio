@@ -34,20 +34,20 @@ Software Developer with **3+ years** of enterprise engineering experience at **E
 
 ## PERSONAL PROJECTS
 
-### **AI Resume Tailor (Chrome Extension & Free Multi-LLM Engine)** | [GitHub Repository](https://github.com/Vishnu1562/AI_Resume_Tailor)
+### **AI Resume Tailor (Chrome Extension)** | [GitHub Repository](https://github.com/Vishnu1562/AI_Resume_Tailor)
 *Tech Stack: TypeScript, Chrome Extension (Manifest V3), Google Gemini Flash API, Groq (Llama 3.3 70B), PDF.js, Vitest*
-* Engineered a privacy-first Chrome Side Panel extension utilizing Manifest V3 to perform real-time ATS keyword matching and contextual resume tailoring against active job boards.
-* Architected multi-LLM cascading inference with dynamic Google AI Studio model auto-discovery, Groq failover, strict anti-hallucination prompt grounding, and client-side ATS PDF export.
+* Built a Chrome Side Panel extension (Manifest V3) that extracts job descriptions from job boards like LinkedIn and Greenhouse to compare with an uploaded resume.
+* Integrated Gemini Flash and Groq (Llama 3.3) APIs to tailor resume bullet points and summaries to target roles while keeping original experience authentic, with client-side ATS PDF export.
 
 ### **Martial Arts Event Manager Platform** | [GitHub Repository](https://github.com/Vishnu1562)
 *Tech Stack: NestJS 11, Angular 21, TypeScript, TypeORM, PostgreSQL, Tailwind CSS*
-* Engineered a full-stack tournament management platform featuring a dynamic form builder powered by an Entity-Attribute-Value (EAV) schema to customize registration fields per event.
-* Implemented hierarchical jurisdictional role-based access control (Country &rarr; State &rarr; District) with automated SQL query interception and multi-regional duplicate participant scanning algorithms.
+* Built a tournament management web application with NestJS, Angular, and PostgreSQL to manage registrations and tournament brackets.
+* Implemented dynamic registration form fields using an EAV schema and set up role-based access control for district, state, and national organizers.
 
 ### **Multi-Profile Job Radar (Automated Job Scanner & Digest Bot)** | [GitHub Repository](https://github.com/Vishnu1562/Job_Bot)
 *Tech Stack: Node.js, TypeScript, SQLite, GitHub Actions, Nodemailer / Brevo SMTP, REST APIs*
-* Built an automated daily job scanning engine aggregating multi-source developer feeds across tailored skill profiles with regex-based skill extraction.
-* Engineered persistent deduplication via an embedded SQLite database and orchestrated zero-overhead 24/7 cloud execution through scheduled GitHub Actions cron workflows dispatching responsive HTML digests.
+* Built an automated script to scrape developer job listings daily based on configured skill profiles and keywords.
+* Stored seen job IDs in an embedded SQLite database to prevent duplicates, scheduled automated daily runs using GitHub Actions, and emailed digest summaries via Nodemailer.
 
 ---
 

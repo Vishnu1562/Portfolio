@@ -93,30 +93,30 @@ const initialState: PortfolioState = {
     },
     {
       title: 'Martial Arts Event Manager Platform',
-      subtitle: 'Personal Project • Tournament & Registration Management (Built by National Sambo Champion)',
+      subtitle: 'Personal Project • Tournament & Registration Management',
       description:
-        'Full-stack sports tournament platform featuring dynamic registration form builders, automated inter-regional duplicate participant detection, and hierarchical jurisdictional access control. Built with domain expertise following victory at the National Sambo Championship (Calicut, April 2026).',
+        'Full-stack web application built with NestJS, Angular, and PostgreSQL to manage tournament brackets, participant registrations, and role-based permissions across organizers. Built by National Sambo Champion (April 2026).',
       techStack: ['NestJS', 'Angular', 'TypeScript', 'TypeORM', 'PostgreSQL', 'Tailwind CSS'],
       githubUrl: 'https://github.com/Vishnu1562',
-      architecture: 'Entity-Attribute-Value (EAV) dynamic schemas with automated multi-tier jurisdictional SQL query interception.',
+      architecture: 'Entity-Attribute-Value (EAV) dynamic schemas with multi-tier jurisdictional access control.',
     },
     {
       title: 'AI Resume Tailor — Chrome Extension',
-      subtitle: 'Personal Project • Manifest V3 & Multi-LLM Engine',
+      subtitle: 'Personal Project • Chrome Side Panel & LLM Tailoring',
       description:
-        'Privacy-first Chrome Side Panel extension that scans active job postings across LinkedIn, Workday, and Greenhouse, evaluates ATS keyword coverage, and tailors resumes using free Gemini Flash & Groq models with strict anti-hallucination grounding.',
+        'Chrome Side Panel extension that reads job postings on sites like LinkedIn and Greenhouse, highlights keyword gaps, and adapts resume bullet points using Gemini Flash and Groq APIs with client-side PDF export.',
       techStack: ['TypeScript', 'Manifest V3', 'Gemini API', 'Groq (Llama 3.3)', 'PDF.js', 'Vitest'],
       githubUrl: 'https://github.com/Vishnu1562/AI_Resume_Tailor',
-      architecture: 'Client-side Manifest V3 service worker and side panel architecture with dynamic multi-model cascading and zero-telemetry local storage.',
+      architecture: 'Manifest V3 side panel and service worker with local Chrome storage and client-side ATS PDF generation.',
     },
     {
       title: 'Multi-Profile Job Radar Bot',
-      subtitle: 'Personal Project • Automated Job Scanner & Cloud Dispatcher',
+      subtitle: 'Personal Project • Automated Daily Job Scanner',
       description:
-        'Automated scanner aggregating remote developer feeds across customizable domain profiles, performing regex skill extraction, persistent SQLite deduplication, and scheduled email digest delivery.',
+        'Automated script that scrapes developer job listings daily based on configured skill profiles, avoids duplicate alerts using an embedded SQLite database, and emails a daily digest.',
       techStack: ['Node.js', 'TypeScript', 'SQLite', 'GitHub Actions', 'REST APIs', 'Nodemailer'],
       githubUrl: 'https://github.com/Vishnu1562/Job_Bot',
-      architecture: 'Serverless 24/7 cron-driven automation via GitHub Actions with persistent file-backed SQLite deduplication.',
+      architecture: 'Daily GitHub Actions cron workflow with embedded SQLite deduplication and Nodemailer digest dispatch.',
     },
   ],
   experiences: [
