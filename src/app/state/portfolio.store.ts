@@ -74,19 +74,19 @@ const initialState: PortfolioState = {
   selectedCategory: 'All',
   projects: [
     {
-      title: 'Saudi Ministry & Government Web Applications',
-      subtitle: 'EY GDS Enterprise Project • Public Sector Portals & APIs',
+      title: 'Saudi Public Sector, Industrial & Energy Enterprise Platforms',
+      subtitle: 'EY GDS Enterprise Project • Saudi Ministry, SDAIA, MODON & Aramco',
       description:
-        'Enterprise-grade government services and RESTful Web APIs developed for the Saudi Ministry and public sector initiatives, ensuring strict role-based data governance, secure validation, and high availability.',
+        'Enterprise-grade government services, industrial administrative portals, and energy sector RESTful Web APIs developed for the Saudi Ministry, SDAIA, MODON, and Saudi Aramco, ensuring strict role-based data governance and high availability.',
       techStack: ['NestJS', 'ASP.NET Core', 'C#', '.NET 8/9', 'PostgreSQL', 'SQL Server', 'Clean Architecture'],
       githubUrl: 'https://github.com/Vishnu1562',
       architecture: 'Clean Architecture with repository patterns, modular domain design, and strict role-based access control.',
     },
     {
-      title: 'Developer Productivity IDE Extensions',
-      subtitle: 'EY GDS Strategic Initiative • In-IDE Developer Tooling',
+      title: 'Developer Productivity IDE Extensions (SDAIA Initiative)',
+      subtitle: 'EY GDS Strategic Initiative • In-IDE Developer Tooling for SDAIA',
       description:
-        'Custom developer productivity extensions engineered for IntelliJ IDEA (JetBrains Plugin SDK) and Visual Studio / VS Code, integrating custom code generation, templates, and intelligent code completions to accelerate developer velocity.',
+        'Custom developer productivity extensions engineered for IntelliJ IDEA (JetBrains Plugin SDK) and Visual Studio / VS Code for SDAIA, integrating custom code generation, templates, and intelligent code completions to accelerate developer velocity.',
       techStack: ['IntelliJ Plugin SDK', 'Visual Studio (VSIX)', 'VS Code API', 'TypeScript', 'Java'],
       githubUrl: 'https://github.com/Vishnu1562',
       architecture: 'Event-driven IDE extensibility integrating directly with editor actions and developer tooling APIs.',
@@ -129,8 +129,9 @@ const initialState: PortfolioState = {
       summary:
         'Engineering mission-critical enterprise applications and developer productivity tooling for global clients and government ministries. Specialized in scalable backend architectures with NestJS and ASP.NET Core, paired with modern Angular SPAs.',
       points: [
-        'Architected and deployed secure, scalable backend services and responsive client portals for public sector initiatives, including enterprise platforms for the Saudi Ministry, adhering to strict data validation and security protocols.',
-        'Engineered custom, real-time in-IDE developer productivity extensions for both IntelliJ IDEA (JetBrains Plugin SDK) and Visual Studio / VS Code as part of an enterprise initiative, implementing custom code generation, templates, and intelligent completions.',
+        'Architected and delivered secure, high-compliance backend services and administrative portals for major public sector authorities including the Saudi Ministry, SDAIA (Saudi Data & AI Authority), and MODON (Industrial Cities & Technology Zones).',
+        'Engineered high-availability enterprise services and integration APIs for tier-1 Energy & Oil/Gas clients, including Saudi Aramco and a leading UAE national energy corporation (confidential under NDA), focusing on scalable data processing in PostgreSQL and SQL Server.',
+        'Engineered custom, real-time in-IDE developer productivity extensions for both IntelliJ IDEA (JetBrains Plugin SDK) and Visual Studio / VS Code as part of an enterprise initiative for SDAIA, implementing custom code generation, templates, and intelligent completions.',
         'Engineered RESTful Web APIs using ASP.NET Core (.NET 8/9) and NestJS, implementing Clean Architecture, repository patterns, and query optimizations for PostgreSQL and SQL Server.',
         'Delivered responsive Single Page Applications (SPAs) with Angular (v16–v21) and NgRx, ensuring modular component architecture and maintainable styling for enterprise client portals.',
         'Managed CI/CD release pipelines in Azure DevOps and GitHub Actions, conducted Postman API validation, performed regular code reviews, and enforced strict type-safety standards.',

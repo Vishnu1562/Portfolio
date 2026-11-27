@@ -202,6 +202,10 @@ describe('Vishnu V - Portfolio Application (Behavioral Contract Tests)', () => {
       expect(expText).toContain('Visual Studio');
       expect(expText).toContain('productivity extensions');
       expect(expText).toContain('Saudi Ministry');
+      expect(expText).toContain('SDAIA');
+      expect(expText).toContain('MODON');
+      expect(expText).toContain('Saudi Aramco');
+      expect(expText).not.toContain('ADNOC');
     });
 
     it('should include IDE extension skills in the Cloud & Tools filter', () => {

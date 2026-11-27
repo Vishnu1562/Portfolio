@@ -120,10 +120,10 @@ A high-performance, responsive single-page portfolio application that showcases 
 * **Preconditions**: User navigates to `#experience` section.
 * **Actions**: Inspect EY GDS enterprise experience card.
 * **Expected Results**:
-  1. Displays full-stack enterprise accomplishments at EY GDS.
-  2. Specifically highlights in-IDE developer productivity extension development across both IntelliJ IDEA and Visual Studio ecosystems.
-  3. Highlights enterprise web applications and API platforms engineered for public sector clients including the Saudi Ministry.
-  4. Displays associated technologies: NestJS, ASP.NET Core, IntelliJ Plugin SDK, Visual Studio (VSIX), PostgreSQL, Angular.
+  1. Displays full-stack enterprise accomplishments at EY GDS across Government/Public Sector (Saudi Ministry, SDAIA, MODON) and Energy & Oil/Gas (Saudi Aramco, leading UAE national energy corporation under NDA).
+  2. Specifically highlights in-IDE developer productivity extension development for SDAIA across both IntelliJ IDEA and Visual Studio ecosystems.
+  3. Adheres strictly to NDA constraints by anonymizing ADNOC as a leading UAE national energy corporation.
+  4. Displays associated technologies: NestJS, ASP.NET Core, IntelliJ Plugin SDK, Visual Studio (VSIX), PostgreSQL, SQL Server, Angular.
 * **Final State**: Enterprise experience details verified.
 
 ### HF-008: Honors & Athletic Leadership (National Sambo Champion)
