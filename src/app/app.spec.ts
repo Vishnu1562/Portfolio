@@ -249,5 +249,30 @@ describe('Vishnu V - Portfolio Application (Behavioral Contract Tests)', () => {
     it('HF-012: should store verified phone number in personalInfo state', () => {
       expect(component.store.personalInfo().phone).toBe('+91 8078854995');
     });
+
+    it('HF-014: should render custom brand monogram icon in the header', () => {
+      const brandLogo = compiled.querySelector('[data-testid="brand-logo"]');
+      expect(brandLogo).toBeTruthy();
+    });
+
+    it('HF-015: should display SDAIA, MODON, and Saudi Aramco in personal bio and experience summary', () => {
+      const bio = component.store.personalInfo().bio;
+      expect(bio).toContain('SDAIA');
+      expect(bio).toContain('MODON');
+      expect(bio).toContain('Saudi Aramco');
+      expect(bio).not.toContain('ADNOC');
+
+      const expSummary = component.store.experiences()[0].summary;
+      expect(expSummary).toContain('SDAIA');
+      expect(expSummary).toContain('Saudi Aramco');
+      expect(expSummary).not.toContain('ADNOC');
+    });
+
+    it('HF-016: should display direct phone contact card in Contact section', () => {
+      const contactSection = compiled.querySelector('#contact');
+      expect(contactSection?.textContent).toContain('+91 8078854995');
+      const telLink = contactSection?.querySelector('a[href^="tel:+918078854995"]');
+      expect(telLink).toBeTruthy();
+    });
   });
 });

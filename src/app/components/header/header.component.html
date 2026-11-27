@@ -1,10 +1,28 @@
 <header class="sticky top-0 z-50 w-full backdrop-blur-xl bg-slate-950/80 border-b border-slate-800/80 transition-all duration-300">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
     <!-- Brand / Logo -->
-    <a href="#about" class="flex items-center gap-2 group">
-      <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-indigo-500 via-indigo-600 to-cyan-400 p-[1px] shadow-sm shadow-indigo-500/20">
-        <div class="w-full h-full bg-slate-950 rounded-[11px] flex items-center justify-center group-hover:bg-slate-900 transition-colors">
-          <span class="font-mono font-bold text-cyan-400 text-sm">VV</span>
+    <a href="#about" class="flex items-center gap-2.5 group">
+      <div data-testid="brand-logo" class="w-9 h-9 rounded-xl bg-gradient-to-tr from-indigo-500 via-indigo-600 to-cyan-400 p-[1px] shadow-sm shadow-indigo-500/20">
+        <div class="w-full h-full bg-slate-950 rounded-[11px] flex items-center justify-center group-hover:bg-slate-900 transition-colors p-1">
+          <svg class="w-full h-full" viewBox="0 0 64 64" fill="none">
+            <defs>
+              <linearGradient id="headerLeftGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#818cf8"/>
+                <stop offset="100%" stop-color="#6366f1"/>
+              </linearGradient>
+              <linearGradient id="headerRightGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#38bdf8"/>
+                <stop offset="100%" stop-color="#06b6d4"/>
+              </linearGradient>
+              <linearGradient id="headerInnerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#a5b4fc"/>
+                <stop offset="100%" stop-color="#22d3ee"/>
+              </linearGradient>
+            </defs>
+            <path d="M14 18 L23 18 L32 40 L41 18 L50 18 L35.5 49 C34.5 51 32 52 30.5 50.5 L14 18 Z" fill="url(#headerLeftGrad)" opacity="0.95"/>
+            <path d="M32 40 L41 18 L50 18 L34 49 Z" fill="url(#headerRightGrad)"/>
+            <path d="M23 23 L28.5 23 L32 32 L35.5 23 L41 23 L34 37 C33 39 31 39 30 37 Z" fill="url(#headerInnerGrad)"/>
+          </svg>
         </div>
       </div>
       <div class="flex flex-col">

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="50%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="leftGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <linearGradient id="rightGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="innerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a5b4fc"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Modern dark squircle container -->
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#bg)" stroke="url(#borderGrad)" stroke-width="2"/>
+
+  <!-- Outer Geometric Monogram 'V' -->
+  <path d="M14 18 L23 18 L32 40 L41 18 L50 18 L35.5 49 C34.5 51 32 52 30.5 50.5 L14 18 Z" fill="url(#leftGrad)" opacity="0.95"/>
+  <path d="M32 40 L41 18 L50 18 L34 49 Z" fill="url(#rightGrad)"/>
+
+  <!-- Inner Chevron 'V' Accent -->
+  <path d="M23 23 L28.5 23 L32 32 L35.5 23 L41 23 L34 37 C33 39 31 39 30 37 Z" fill="url(#innerGrad)"/>
+</svg>

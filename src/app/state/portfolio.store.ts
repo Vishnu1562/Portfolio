@@ -26,7 +26,7 @@ const initialState: PortfolioState = {
     company: 'EY GDS',
     location: 'Kochi, Kerala, India',
     status: 'Available for new opportunities',
-    bio: 'Consultant 1 at EY GDS and National Sambo Champion (Gold Medalist & All-India Rank 1 Certified Referee), specializing in scalable server-side architecture, modular REST APIs, and developer productivity tooling with NestJS, TypeScript, and ASP.NET Core. Experienced in delivering enterprise web platforms for public sector clients, including initiatives for the Saudi Ministry, alongside in-IDE developer extensions across IntelliJ IDEA and Visual Studio.',
+    bio: 'Consultant 1 at EY GDS and National Sambo Champion (Gold Medalist & All-India Rank 1 Certified Referee), specializing in scalable server-side architecture, modular REST APIs, and developer productivity tooling with NestJS, TypeScript, and ASP.NET Core. Experienced in delivering enterprise web platforms across Government & Public Sector (Saudi Ministry, SDAIA, MODON) and Energy & Oil/Gas (Saudi Aramco and a leading UAE energy leader), alongside in-IDE developer productivity extensions for SDAIA across IntelliJ IDEA and Visual Studio.',
     github: 'https://github.com/Vishnu1562',
     linkedin: 'https://www.linkedin.com/in/vishnu-v-40a0/',
     email: 'vishnuv2754@gmail.com',
@@ -127,7 +127,7 @@ const initialState: PortfolioState = {
       period: 'Oct 2023 – Present',
       badge: 'Enterprise Experience',
       summary:
-        'Engineering mission-critical enterprise applications and developer productivity tooling for global clients and government ministries. Specialized in scalable backend architectures with NestJS and ASP.NET Core, paired with modern Angular SPAs.',
+        'Engineering mission-critical enterprise platforms and developer productivity tooling for global government ministries, public sector authorities (SDAIA, MODON), and tier-1 energy leaders (Saudi Aramco). Specialized in robust backend architectures with NestJS, ASP.NET Core, and modern Angular SPAs.',
       points: [
         'Architected and delivered secure, high-compliance backend services and administrative portals for major public sector authorities including the Saudi Ministry, SDAIA (Saudi Data & AI Authority), and MODON (Industrial Cities & Technology Zones).',
         'Engineered high-availability enterprise services and integration APIs for tier-1 Energy & Oil/Gas clients, including Saudi Aramco and a leading UAE national energy corporation (confidential under NDA), focusing on scalable data processing in PostgreSQL and SQL Server.',

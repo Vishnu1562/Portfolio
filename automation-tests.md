@@ -173,6 +173,32 @@ A high-performance, responsive single-page portfolio application that showcases 
   4. Links directly to `https://github.com/Vishnu1562/AI_Resume_Tailor`.
 * **Final State**: AI Resume Tailor project verified on website and resumes.
 
+### HF-014: Custom Brand Monogram Icon & Favicon
+* **Preconditions**: User visits the website in browser.
+* **Actions**: Inspect the browser tab icon and the header brand navbar logo.
+* **Expected Results**:
+  1. Browser tab displays custom Vishnu V monogram icon (`favicon.svg` and `favicon.ico`) instead of the default Angular framework logo.
+  2. Header navigation brand contains the matching custom vector monogram icon.
+  3. Page title accurately reflects `Vishnu V | Consultant 1 @ EY GDS | Full Stack & Platform Engineer`.
+* **Final State**: Custom brand identity established across browser tab and header.
+
+### HF-015: Enterprise Public Sector & Energy Experience in Bio and Experience Summary
+* **Preconditions**: User navigates to `#about` and `#experience` sections.
+* **Actions**: Inspect Personal Info Bio and EY GDS enterprise experience summary.
+* **Expected Results**:
+  1. Bio clearly details enterprise platforms across Public Sector (Saudi Ministry, SDAIA, MODON) and Energy & Oil/Gas (Saudi Aramco & UAE Energy Leader).
+  2. Bio highlights SDAIA in-IDE developer productivity extensions for IntelliJ IDEA and Visual Studio.
+  3. Adheres to NDA by strictly keeping ADNOC anonymized as a leading UAE national energy corporation.
+* **Final State**: Enterprise consulting domain breadth visible in primary bio and experience summaries.
+
+### HF-016: Direct Phone Contact Card in Contact Section
+* **Preconditions**: User navigates to `#contact` section.
+* **Actions**: Inspect contact channels.
+* **Expected Results**:
+  1. Displays direct phone contact card with verified number `+91 8078854995`.
+  2. Includes active `tel:+918078854995` link for one-click calling or reach-out.
+* **Final State**: Direct telephone reach-out channel active in Contact section.
+
 ---
 
 ## Negative Flows
