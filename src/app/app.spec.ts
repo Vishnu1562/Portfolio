@@ -218,7 +218,7 @@ describe('Vishnu V - Portfolio Application (Behavioral Contract Tests)', () => {
 
     it('should display client engagement and requirements delivery in Experience section', () => {
       const expText = compiled.querySelector('#experience')?.textContent || '';
-      expect(expText).toContain('Connected directly with enterprise client stakeholders');
+      expect(expText).toContain('Worked directly with clients and product owners');
       expect(expText).toContain('business requirements');
     });
 

@@ -26,7 +26,7 @@ const initialState: PortfolioState = {
     company: 'EY GDS',
     location: 'Kochi, Kerala, India',
     status: 'Available for new opportunities',
-    bio: 'Consultant 1 at EY GDS and National Sambo Champion (Gold Medalist & All-India Rank 1 Certified Referee), specializing in scalable server-side architecture, modular REST APIs, and developer productivity tooling with NestJS, TypeScript, and ASP.NET Core. Experienced in connecting directly with enterprise clients across Public Sector (Saudi Ministry, SDAIA, MODON) and Energy & Oil/Gas (Saudi Aramco and a leading UAE energy leader) to understand domain requirements and implement end-to-end features and application enhancements, alongside in-IDE extensions for SDAIA.',
+    bio: 'Consultant 1 at EY GDS and National Sambo Champion (Gold Medalist & All-India Rank 1 Certified Referee), specializing in scalable server-side architecture, modular REST APIs, and developer productivity tooling with NestJS, TypeScript, and ASP.NET Core. Experienced in working directly with enterprise clients across Public Sector (Saudi Ministry, SDAIA, MODON) and Energy & Oil/Gas (Saudi Aramco and a leading UAE energy leader) to understand requirements, plan changes, and build new features and improvements, alongside in-IDE extensions for SDAIA.',
     github: 'https://github.com/Vishnu1562',
     linkedin: 'https://www.linkedin.com/in/vishnu-v-40a0/',
     email: 'vishnuv2754@gmail.com',
@@ -134,7 +134,7 @@ const initialState: PortfolioState = {
         'Engineered custom, real-time in-IDE developer productivity extensions for both IntelliJ IDEA (JetBrains Plugin SDK) and Visual Studio / VS Code as part of an enterprise initiative for SDAIA, implementing custom code generation, templates, and intelligent completions.',
         'Engineered RESTful Web APIs using ASP.NET Core (.NET 8/9) and NestJS, implementing Clean Architecture, repository patterns, and query optimizations for PostgreSQL and SQL Server.',
         'Delivered responsive Single Page Applications (SPAs) with Angular (v16–v21) and NgRx, ensuring modular component architecture and maintainable styling for enterprise client portals.',
-        'Connected directly with enterprise client stakeholders and product owners to understand business requirements, define technical scope, and implement end-to-end feature enhancements and application changes across production systems.',
+        'Worked directly with clients and product owners to understand business requirements, plan changes, and build new features and improvements for production applications.',
       ],
       technologies: [
         'NestJS',
