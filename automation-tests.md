@@ -53,12 +53,12 @@ A high-performance, responsive single-page portfolio application that showcases 
 ### HF-002: Hero Section Display and Primary CTAs
 * **Preconditions**: Page is loaded at root.
 * **Actions**:
-  1. View Hero section.
+  1. View Hero section and header navigation.
   2. Click "View Projects" CTA.
   3. Click "Contact Me" CTA.
 * **Expected Results**:
   1. Name "Vishnu V" and headline "Consultant 1" are prominently displayed in the Hero section without awkward inline employer tags.
-  2. Single primary Resume action is maintained in the navigation header, removing duplicate hero resume buttons.
+  2. Single primary Resume action is maintained in the navigation header as a direct download link, removing duplicate hero resume buttons and removing the "Hire Me" button.
   3. "View Projects" scrolls smoothly to `#projects`.
   4. "Contact Me" scrolls smoothly to `#contact`.
 * **Final State**: Target section brought into view.
@@ -93,28 +93,34 @@ A high-performance, responsive single-page portfolio application that showcases 
   3. External links open with `target="_blank"` and `rel="noopener noreferrer"`.
 * **Final State**: Correct project links and cards verified.
 
-### HF-005: Resume Download / View (Industry ATS Standard)
-* **Preconditions**: User clicks "Download Resume" in header or hero section.
+### HF-005: Resume Direct Download (Industry ATS Standard)
+* **Preconditions**: User clicks "Resume" in header or "Download Resume" in mobile menu.
 * **Actions**:
-  1. Click "Download Resume" button.
+  1. Click "Resume" link in header.
 * **Expected Results**:
-  1. Opens the CV modal and triggers download of the industry standard PDF resume (`Vishnu_V_Resume.pdf`).
-  2. Resume content follows clean ATS standards with zero decorative emojis (`📍`, `📧`, `🔗`, `💻`, `📌`, `🛠️`, `💼`, `🚀`, `🎓`) and removes generic AI fluff.
-  3. Clearly presents verified contact information including phone (`+91 8078854995`), email (`vishnuv2754@gmail.com`), location (`Kochi, Kerala, India`), LinkedIn, and GitHub.
-  4. Clearly separates EY GDS Enterprise Experience from Independent/Personal Projects, giving priority to EY GDS.
-  5. Omits unverified skills (no microservices, no AST, no testing suites).
-* **Final State**: ATS-compliant resume download initiated without error.
+  1. Directly downloads the industry standard PDF resume (`Vishnu_V_Resume.pdf`) via an HTML5 download anchor (`href="Vishnu_V_Resume.pdf"` and `download="Vishnu_V_Resume.pdf"`).
+  2. Does NOT open an intermediary popup dialog or modal; download triggers immediately in 1 click.
+  3. Resume content follows clean ATS standards with zero decorative emojis (`📍`, `📧`, `🔗`, `💻`, `📌`, `🛠️`, `💼`, `🚀`, `🎓`) and removes generic AI fluff.
+  4. Clearly presents verified contact information on the PDF including phone (`+91 8078854995`), email (`vishnuv2754@gmail.com`), location (`Kochi, Kerala, India`), LinkedIn, and GitHub.
+  5. Clearly separates EY GDS Enterprise Experience from Independent/Personal Projects, giving priority to EY GDS.
+  6. Omits unverified skills (no microservices, no AST, no testing suites).
+* **Final State**: ATS-compliant resume download initiated directly in 1 click without error.
 
-### HF-006: Contact Form Successful Submission
+### HF-006: Direct Contact Hub (Email, LinkedIn, GitHub, Location)
 * **Preconditions**: User navigates to `#contact` section.
 * **Actions**:
-  1. Fill in valid Name, valid Email, Subject, and Message.
-  2. Click "Send Message".
+  1. Inspect contact channels in `#contact`.
+  2. Click Direct Email card.
+  3. Click LinkedIn profile card.
+  4. Click GitHub profile card.
 * **Expected Results**:
-  1. Form enters submitting state (button shows loading spinner / disabled).
-  2. Success notification is displayed ("Thank you! Your message has been sent successfully.").
-  3. Form fields reset to empty.
-* **Final State**: Form is cleared, success confirmation visible.
+  1. The direct message input form is eliminated in favor of a clean, responsive 4-card direct contact hub.
+  2. Displays Direct Email card linking to `mailto:vishnuv2754@gmail.com`.
+  3. Displays LinkedIn card linking to `https://www.linkedin.com/in/vishnu-v-40a0/` with `target="_blank"` and `rel="noopener noreferrer"`.
+  4. Displays GitHub card linking to `https://github.com/Vishnu1562` with `target="_blank"` and `rel="noopener noreferrer"`.
+  5. Displays Location / Availability card showing `Kerala, India` and `Available for remote & hybrid roles`.
+  6. Phone number (`+91 8078854995`) is NOT displayed on the public website UI for privacy.
+* **Final State**: Direct professional reach-out channels verified.
 
 ### HF-007: Enterprise Career & IDE Extension Development Details
 * **Preconditions**: User navigates to `#experience` section.
@@ -191,37 +197,23 @@ A high-performance, responsive single-page portfolio application that showcases 
   3. Adheres to NDA by strictly keeping ADNOC anonymized as a leading UAE national energy corporation.
 * **Final State**: Enterprise consulting domain breadth visible in primary bio and experience summaries.
 
-### HF-016: Direct Phone Contact Card in Contact Section
-* **Preconditions**: User navigates to `#contact` section.
-* **Actions**: Inspect contact channels.
+### HF-016: Phone Number Privacy & Protection
+* **Preconditions**: User inspects the public website UI (header, hero, about, experience, projects, contact, footer).
+* **Actions**: Inspect visible text across the entire rendered portfolio interface.
 * **Expected Results**:
-  1. Displays direct phone contact card with verified number `+91 8078854995`.
-  2. Includes active `tel:+918078854995` link for one-click calling or reach-out.
-* **Final State**: Direct telephone reach-out channel active in Contact section.
+  1. Personal mobile phone number (`+91 8078854995`) is NOT displayed anywhere in the visible website UI to prevent spam and protect privacy.
+  2. Mobile number remains strictly inside the downloadable PDF resume (`Vishnu_V_Resume.pdf`) for verified recruiters.
+* **Final State**: Mobile privacy enforced across website UI.
 
 ---
 
 ## Negative Flows
 
-### NF-001: Contact Form Blank Submission
-* **Preconditions**: User is at `#contact` section.
-* **Actions**:
-  1. Leave Name, Email, and Message blank.
-  2. Click "Send Message".
-* **Expected Results**:
-  1. Form submission is prevented.
-  2. Validation error messages appear below required fields ("Name is required", "Valid email is required", "Message is required").
-  3. No network dispatch or simulated success occurs.
-* **Final State**: Fields highlighted with error states.
+### NF-001: Superseded / Deprecated (Contact Form Removed)
+* The direct message contact form has been intentionally replaced with direct contact links (Email, LinkedIn, GitHub, Location) to eliminate unauthenticated form spam, avoid external form services, and provide direct visitor communication. No form submission validation flows remain active.
 
-### NF-002: Contact Form Invalid Email Format
-* **Preconditions**: User enters valid Name and Message, but enters invalid email `invalid-email-address`.
-* **Actions**:
-  1. Click "Send Message".
-* **Expected Results**:
-  1. Email field displays error: "Please enter a valid email address".
-  2. Submission is blocked.
-* **Final State**: Form remains in error state.
+### NF-002: Superseded / Deprecated (Contact Form Removed)
+* Email input format validation is superseded by direct mailto link dispatch.
 
 ---
 
@@ -232,10 +224,11 @@ A high-performance, responsive single-page portfolio application that showcases 
 * **Actions**:
   1. Desktop nav menu collapses into a hamburger icon.
   2. Tap hamburger icon.
-  3. Tap a navigation link.
+  3. Tap a navigation link or "Download Resume" link.
 * **Expected Results**:
   1. Slide-over / dropdown mobile navigation opens with accessible controls.
   2. Tapping any section link closes the mobile drawer and navigates to the anchor.
+  3. Tapping "Download Resume" triggers direct PDF download and closes drawer.
 * **Final State**: Mobile drawer is closed, viewport scrolled to anchor.
 
 ### EC-002: Rapid Filter Switching
@@ -246,15 +239,12 @@ A high-performance, responsive single-page portfolio application that showcases 
 ---
 
 ## Validation Rules
-* **VR-001**: Name field must not be empty or whitespace only (min length 2 characters).
-* **VR-002**: Email field must conform to standard email regex `^[^@\s]+@[^@\s]+\.[^@\s]+$`.
-* **VR-003**: Message field must have a minimum length of 10 characters.
+* Direct links (`mailto:`, `https://linkedin.com`, `https://github.com`, `Vishnu_V_Resume.pdf`) must be syntactically valid and secure.
 
 ---
 
 ## Loading & State Transitions
-* **ST-001**: Contact form submission transitions through `idle` -> `submitting` -> `success` / `error`.
-* **ST-002**: Filter transitions update skill cards dynamically.
+* **ST-001**: Skill filter transitions update skill cards dynamically.
 
 ---
 

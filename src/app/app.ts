@@ -1,6 +1,5 @@
-import { Component, inject, viewChild } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './components/header/header.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { ExperienceComponent } from './components/experience/experience.component';
@@ -17,7 +16,6 @@ import { SkillCategory } from './core/models/skill.model';
   standalone: true,
   imports: [
     CommonModule,
-    ReactiveFormsModule,
     HeaderComponent,
     HeroComponent,
     ExperienceComponent,
@@ -32,7 +30,6 @@ import { SkillCategory } from './core/models/skill.model';
 })
 export class App {
   readonly store = inject(PortfolioStore);
-  readonly contactChild = viewChild(ContactComponent);
 
   // Store delegations for contract compatibility
   readonly personalInfo = this.store.personalInfo;
@@ -43,21 +40,6 @@ export class App {
   readonly filteredSkills = this.store.filteredSkills;
   readonly projects = this.store.projects;
   readonly resumeModalOpen = this.store.resumeModalOpen;
-  readonly submissionSuccess = this.store.contactSuccess;
-  readonly isSubmitting = this.store.isSubmittingContact;
-
-  get contactForm() {
-    const child = this.contactChild();
-    if (!child) {
-      throw new Error('ContactComponent not yet initialized');
-    }
-    return child.contactForm;
-  }
-
-  get formSubmitted() {
-    const child = this.contactChild();
-    return () => (child ? child.formSubmitted() : false);
-  }
 
   toggleMobileMenu(): void {
     this.store.toggleMobileMenu();
@@ -81,13 +63,5 @@ export class App {
 
   downloadPlaceholderResume(): void {
     this.store.downloadResume();
-  }
-
-  resetContactNotification(): void {
-    this.store.resetContactSuccess();
-  }
-
-  onSubmitContact(): void {
-    this.contactChild()?.onSubmitContact();
   }
 }

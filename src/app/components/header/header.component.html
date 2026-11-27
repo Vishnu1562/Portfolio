@@ -42,21 +42,15 @@
 
     <!-- Header Actions -->
     <div class="hidden md:flex items-center gap-3">
-      <button
-        type="button"
-        (click)="store.openResumeModal()"
+      <a
+        href="Vishnu_V_Resume.pdf"
+        download="Vishnu_V_Resume.pdf"
         class="inline-flex items-center gap-2 px-3.5 py-1.5 text-xs font-semibold rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-700/80 hover:border-cyan-500/40 transition-all shadow-sm"
       >
         <svg class="w-3.5 h-3.5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
         </svg>
         <span>Resume</span>
-      </button>
-      <a
-        href="#contact"
-        class="inline-flex items-center gap-1.5 px-3.5 py-1.5 text-xs font-semibold rounded-lg bg-gradient-to-r from-indigo-500 to-cyan-500 hover:from-indigo-600 hover:to-cyan-600 text-white transition-all shadow-md shadow-indigo-500/20"
-      >
-        Hire Me
       </a>
     </div>
 
@@ -90,13 +84,17 @@
       <a (click)="store.closeMobileMenu()" href="#projects" class="block px-3 py-2 rounded-lg text-base font-medium text-slate-200 hover:text-cyan-400 hover:bg-slate-900">Projects</a>
       <a (click)="store.closeMobileMenu()" href="#contact" class="block px-3 py-2 rounded-lg text-base font-medium text-slate-200 hover:text-cyan-400 hover:bg-slate-900">Contact</a>
       <div class="pt-3 flex flex-col gap-2">
-        <button
-          type="button"
-          (click)="store.openResumeModal(); store.closeMobileMenu()"
-          class="w-full py-2 text-center text-sm font-medium rounded-lg bg-slate-900 text-slate-200 border border-slate-800"
+        <a
+          href="Vishnu_V_Resume.pdf"
+          download="Vishnu_V_Resume.pdf"
+          (click)="store.closeMobileMenu()"
+          class="w-full py-2 text-center text-sm font-medium rounded-lg bg-slate-900 text-slate-200 border border-slate-800 inline-flex items-center justify-center gap-2"
         >
-          Download Resume
-        </button>
+          <svg class="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+          </svg>
+          <span>Download Resume</span>
+        </a>
       </div>
     </div>
   }

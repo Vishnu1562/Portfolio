@@ -56,11 +56,16 @@ describe('Vishnu V - Portfolio Application (Behavioral Contract Tests)', () => {
       expect(statusBadge).toBeNull();
     });
 
-    it('should render primary CTA buttons for Projects and Contact', () => {
+    it('should render primary CTA buttons for Projects and Contact, and NOT render Hire Me in header', () => {
       const projectsCTA = compiled.querySelector('a[href="#projects"]');
       const contactCTA = compiled.querySelector('a[href="#contact"]');
       expect(projectsCTA).toBeTruthy();
       expect(contactCTA).toBeTruthy();
+
+      const headerHireMe = Array.from(compiled.querySelectorAll('header a')).find(
+        (el) => el.textContent?.trim() === 'Hire Me'
+      );
+      expect(headerHireMe).toBeUndefined();
     });
   });
 
@@ -138,61 +143,52 @@ describe('Vishnu V - Portfolio Application (Behavioral Contract Tests)', () => {
     });
   });
 
-  describe('HF-005: Resume Download / View', () => {
-    it('should have a resume download action with download modal or direct download', () => {
-      expect(component.resumeModalOpen()).toBe(false);
-      component.triggerResumeDownload();
-      expect(component.resumeModalOpen()).toBe(true);
-      component.closeResumeModal();
-      expect(component.resumeModalOpen()).toBe(false);
+  describe('HF-005: Resume Direct Download', () => {
+    it('should directly link to Vishnu_V_Resume.pdf in the header with download attribute', () => {
+      const headerResume = compiled.querySelector('header a[download="Vishnu_V_Resume.pdf"]');
+      expect(headerResume).toBeTruthy();
+      expect(headerResume?.getAttribute('href')).toBe('Vishnu_V_Resume.pdf');
     });
 
-    it('should link to the PDF resume document', () => {
-      component.triggerResumeDownload();
+    it('should directly link to Vishnu_V_Resume.pdf in the mobile menu drawer', () => {
+      component.toggleMobileMenu();
       fixture.detectChanges();
-      const link = compiled.querySelector('a[download="Vishnu_V_Resume.pdf"]');
-      expect(link).toBeTruthy();
-      expect(link?.getAttribute('href')).toContain('Vishnu_V_Resume.pdf');
+      const mobileResume = compiled.querySelector('header .md\\:hidden a[download="Vishnu_V_Resume.pdf"]');
+      expect(mobileResume).toBeTruthy();
+      expect(mobileResume?.getAttribute('href')).toBe('Vishnu_V_Resume.pdf');
+      component.closeMobileMenu();
+      fixture.detectChanges();
     });
   });
 
-  describe('HF-006, NF-001, NF-002: Contact Form Validation & State', () => {
-    it('should initialize contact form with empty fields', () => {
-      expect(component.contactForm.valid).toBe(false);
-      expect(component.contactForm.get('name')?.value).toBe('');
-      expect(component.contactForm.get('email')?.value).toBe('');
-      expect(component.contactForm.get('subject')?.value).toBe('');
-      expect(component.contactForm.get('message')?.value).toBe('');
+  describe('HF-006: Direct Contact Hub', () => {
+    it('should NOT render a contact message form', () => {
+      const contactForm = compiled.querySelector('#contact form');
+      expect(contactForm).toBeNull();
     });
 
-    it('NF-001: should prevent submission and mark fields touched when submitted empty', () => {
-      component.onSubmitContact();
-      expect(component.contactForm.invalid).toBe(true);
-      expect(component.formSubmitted()).toBe(true);
-      expect(component.submissionSuccess()).toBe(false);
-    });
+    it('should render direct reach-out cards for Email, LinkedIn, GitHub, and Location', () => {
+      const contactSection = compiled.querySelector('#contact');
+      expect(contactSection).toBeTruthy();
 
-    it('NF-002: should detect invalid email format', () => {
-      const emailCtrl = component.contactForm.get('email');
-      emailCtrl?.setValue('not-an-email');
-      expect(emailCtrl?.valid).toBe(false);
-      expect(emailCtrl?.hasError('email')).toBe(true);
-    });
+      // Email link
+      const emailLink = contactSection?.querySelector('a[href^="mailto:vishnuv2754@gmail.com"]');
+      expect(emailLink).toBeTruthy();
 
-    it('HF-006: should successfully submit valid contact form and reset form', () => {
-      component.contactForm.setValue({
-        name: 'Jane Doe',
-        email: 'jane.doe@example.com',
-        subject: 'Enterprise Opportunity',
-        message: 'Looking forward to connecting with you regarding full-stack roles.',
-      });
+      // LinkedIn link
+      const linkedInLink = contactSection?.querySelector('a[href="https://www.linkedin.com/in/vishnu-v-40a0/"]');
+      expect(linkedInLink).toBeTruthy();
+      expect(linkedInLink?.getAttribute('target')).toBe('_blank');
+      expect(linkedInLink?.getAttribute('rel')).toContain('noopener');
 
-      expect(component.contactForm.valid).toBe(true);
-      component.onSubmitContact();
+      // GitHub link
+      const githubLink = contactSection?.querySelector('a[href="https://github.com/Vishnu1562"]');
+      expect(githubLink).toBeTruthy();
+      expect(githubLink?.getAttribute('target')).toBe('_blank');
+      expect(githubLink?.getAttribute('rel')).toContain('noopener');
 
-      expect(component.submissionSuccess()).toBe(true);
-      expect(component.contactForm.get('name')?.value).toBeFalsy();
-      expect(component.contactForm.get('email')?.value).toBeFalsy();
+      // Location
+      expect(contactSection?.textContent).toContain('Kerala, India');
     });
   });
 
@@ -275,11 +271,12 @@ describe('Vishnu V - Portfolio Application (Behavioral Contract Tests)', () => {
       expect(expSummary).not.toContain('ADNOC');
     });
 
-    it('HF-016: should display direct phone contact card in Contact section', () => {
-      const contactSection = compiled.querySelector('#contact');
-      expect(contactSection?.textContent).toContain('+91 8078854995');
-      const telLink = contactSection?.querySelector('a[href^="tel:+918078854995"]');
-      expect(telLink).toBeTruthy();
+    it('HF-016: should NOT display mobile phone number anywhere in the public website interface', () => {
+      // Must not display phone number anywhere in the rendered page
+      expect(compiled.textContent).not.toContain('8078854995');
+      // Must not contain any tel: links
+      const telLink = compiled.querySelector('a[href^="tel:"]');
+      expect(telLink).toBeNull();
     });
   });
 });

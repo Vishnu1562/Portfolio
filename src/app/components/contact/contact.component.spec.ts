@@ -1,46 +1,44 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { ReactiveFormsModule } from '@angular/forms';
 import { ContactComponent } from './contact.component';
 import { PortfolioStore } from '../../state/portfolio.store';
 
 describe('ContactComponent', () => {
   let fixture: ComponentFixture<ContactComponent>;
   let component: ContactComponent;
-  let store: InstanceType<typeof PortfolioStore>;
+  let compiled: HTMLElement;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ContactComponent, ReactiveFormsModule],
+      imports: [ContactComponent],
       providers: [PortfolioStore],
     }).compileComponents();
 
     fixture = TestBed.createComponent(ContactComponent);
     component = fixture.componentInstance;
-    store = TestBed.inject(PortfolioStore);
     fixture.detectChanges();
+    compiled = fixture.nativeElement as HTMLElement;
   });
 
   it('should create contact component', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should mark form submitted and block invalid input', () => {
-    component.onSubmitContact();
-    expect(component.formSubmitted()).toBe(true);
-    expect(component.contactForm.invalid).toBe(true);
-    expect(store.contactSuccess()).toBe(false);
+  it('should render 4 direct contact cards: Email, LinkedIn, GitHub, Location', () => {
+    const emailLink = compiled.querySelector('a[href^="mailto:vishnuv2754@gmail.com"]');
+    expect(emailLink).toBeTruthy();
+
+    const linkedInLink = compiled.querySelector('a[href="https://www.linkedin.com/in/vishnu-v-40a0/"]');
+    expect(linkedInLink).toBeTruthy();
+
+    const githubLink = compiled.querySelector('a[href="https://github.com/Vishnu1562"]');
+    expect(githubLink).toBeTruthy();
+
+    expect(compiled.textContent).toContain('Kerala, India');
   });
 
-  it('should submit valid data to store and reset form', () => {
-    component.contactForm.setValue({
-      name: 'Alice',
-      email: 'alice@example.com',
-      subject: 'Consulting Inquiry',
-      message: 'Looking to hire an Angular and .NET specialist.',
-    });
-
-    component.onSubmitContact();
-    expect(store.contactSuccess()).toBe(true);
-    expect(component.contactForm.get('name')?.value).toBeFalsy();
+  it('should NOT render a contact form or phone number', () => {
+    expect(compiled.querySelector('form')).toBeNull();
+    expect(compiled.textContent).not.toContain('8078854995');
+    expect(compiled.querySelector('a[href^="tel:"]')).toBeNull();
   });
 });
