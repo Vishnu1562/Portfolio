@@ -84,7 +84,7 @@ A high-performance, responsive single-page portfolio application that showcases 
      - `Saudi Ministry & Government Web Applications` (EY GDS Client Initiative)
      - `Developer Productivity IDE Extensions` (EY GDS Strategic Initiative)
      - `Martial Arts Event Manager Platform` (Personal Project)
-     - `Multi-Profile Job Radar Bot` (Personal Project)
+     - `Multi-Profile Job Radar Bot` (Personal Project with live portal link: `https://vishnu1562.github.io/Job_Bot/`)
      - `AI Resume Tailor — Chrome Extension` (Personal Project)
   3. Click project link on a project card.
 * **Expected Results**:

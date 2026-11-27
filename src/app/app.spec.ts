@@ -110,6 +110,7 @@ describe('Vishnu V - Portfolio Application (Behavioral Contract Tests)', () => {
       const jobRadar = projects.find((p) => p.title.includes('Job Radar') || p.title.includes('Job Bot'));
       expect(jobRadar).toBeDefined();
       expect(jobRadar?.githubUrl).toContain('Vishnu1562/Job_Bot');
+      expect(jobRadar?.liveUrl).toBe('https://vishnu1562.github.io/Job_Bot/');
 
       const govProject = projects.find((p) => p.title.includes('Saudi Ministry') || p.title.includes('Public Sector'));
       expect(govProject).toBeDefined();

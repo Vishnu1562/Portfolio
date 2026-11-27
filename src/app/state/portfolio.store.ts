@@ -116,6 +116,7 @@ const initialState: PortfolioState = {
         'Automated script that scrapes developer job listings daily based on configured skill profiles, avoids duplicate alerts using an embedded SQLite database, and emails a daily digest.',
       techStack: ['Node.js', 'TypeScript', 'SQLite', 'GitHub Actions', 'REST APIs', 'Nodemailer'],
       githubUrl: 'https://github.com/Vishnu1562/Job_Bot',
+      liveUrl: 'https://vishnu1562.github.io/Job_Bot/',
       architecture: 'Daily GitHub Actions cron workflow with embedded SQLite deduplication and Nodemailer digest dispatch.',
     },
   ],

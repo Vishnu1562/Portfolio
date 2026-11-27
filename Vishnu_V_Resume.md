@@ -45,7 +45,7 @@ Software Developer with **3+ years** of enterprise engineering experience at **E
 * Built a tournament management web application with NestJS, Angular, and PostgreSQL to manage registrations and tournament brackets.
 * Implemented dynamic registration form fields using an EAV schema and set up role-based access control for district, state, and national organizers.
 
-### **Multi-Profile Job Radar (Automated Job Scanner & Digest Bot)** | [GitHub Repository](https://github.com/Vishnu1562/Job_Bot)
+### **Multi-Profile Job Radar (Automated Job Scanner & Digest Bot)** | [Live Portal](https://vishnu1562.github.io/Job_Bot/) &bull; [GitHub](https://github.com/Vishnu1562/Job_Bot)
 *Tech Stack: Node.js, TypeScript, SQLite, GitHub Actions, Nodemailer / Brevo SMTP, REST APIs*
 * Built an automated script to scrape developer job listings daily based on configured skill profiles and keywords.
 * Stored seen job IDs in an embedded SQLite database to prevent duplicates, scheduled automated daily runs using GitHub Actions, and emailed digest summaries via Nodemailer.
