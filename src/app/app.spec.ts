@@ -216,6 +216,12 @@ describe('Vishnu V - Portfolio Application (Behavioral Contract Tests)', () => {
       expect(filtered.some((s) => s.name === 'Visual Studio Extension')).toBe(true);
     });
 
+    it('should display client engagement and requirements delivery in Experience section', () => {
+      const expText = compiled.querySelector('#experience')?.textContent || '';
+      expect(expText).toContain('Connected directly with enterprise client stakeholders');
+      expect(expText).toContain('business requirements');
+    });
+
     it('HF-008: should display Honors & Athletic Leadership card in the Experience section', () => {
       const expText = compiled.querySelector('#experience')?.textContent || '';
       expect(expText).toContain('National Sambo Champion');

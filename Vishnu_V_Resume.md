@@ -5,7 +5,7 @@ Kochi, Kerala, India &bull; +91 8078854995 &bull; [vishnuv2754@gmail.com](mailto
 ---
 
 ## PROFESSIONAL SUMMARY
-Software Developer with **3+ years** of enterprise engineering experience at **EY GDS**, specializing in robust server-side architecture, high-performance RESTful Web APIs, and full-stack enterprise applications using **C# (ASP.NET Core / .NET 8)**, **TypeScript**, **Node.js (NestJS)**, and **Angular**. Strong foundation in Object-Oriented Programming (**OOP**), **SOLID** design principles, Clean Architecture, and relational database modeling across **SQL Server** and **PostgreSQL**. Proven track record delivering mission-critical public sector systems (including the **Saudi Ministry**) and engineering in-IDE developer productivity extensions for **Visual Studio** and **IntelliJ IDEA** within collaborative Agile/Scrum environments.
+Software Developer with **3+ years** of enterprise engineering experience at **EY GDS**, specializing in robust server-side architecture, high-performance RESTful Web APIs, and full-stack enterprise applications using **C# (ASP.NET Core / .NET 8)**, **TypeScript**, **Node.js (NestJS)**, and **Angular**. Strong foundation in Object-Oriented Programming (**OOP**), **SOLID** design principles, Clean Architecture, and relational database modeling across **SQL Server** and **PostgreSQL**. Proven track record interfacing directly with enterprise clients to understand business requirements, translate them into scalable technical features, deliver mission-critical public sector systems (including the **Saudi Ministry**), and engineer in-IDE developer productivity extensions for **Visual Studio** and **IntelliJ IDEA** within collaborative Agile environments.
 
 ---
 
@@ -28,7 +28,7 @@ Software Developer with **3+ years** of enterprise engineering experience at **E
 * **In-IDE Developer Productivity Extensions (SDAIA Initiative)**: Engineered custom in-IDE developer productivity extensions for **IntelliJ IDEA** (JetBrains Plugin SDK) and **Visual Studio / VS Code** as part of an enterprise initiative for **SDAIA**. Implemented custom code generation, templates, and intelligent code completions to accelerate developer productivity and standardize engineering workflows across teams.
 * **Modular Backend Services & REST APIs**: Developed Web APIs using **NestJS** and **ASP.NET Core (.NET 8/9)**, implementing Clean Architecture, dependency injection, custom middleware guards, and database query optimizations for PostgreSQL and SQL Server.
 * **Frontend Client SPAs**: Developed responsive, accessible Single Page Applications (SPAs) with **Angular (v16–v21)** and **NgRx**, ensuring modular component architecture and maintainable styling for enterprise client portals.
-* **DevOps, Collaboration & Code Quality**: Managed CI/CD release pipelines in **Azure DevOps** and **GitHub Actions**, conducted Postman API validation, performed regular code reviews, and enforced strict type-safety standards.
+* **Client Engagement & Requirements Delivery**: Interfaced directly with enterprise client stakeholders and product owners in Agile cadences to understand business requirements, define technical scope, and implement end-to-end feature enhancements, changes, and user-centric workflows across production applications.
 
 ---
 
