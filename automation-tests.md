@@ -61,6 +61,7 @@ A high-performance, responsive single-page portfolio application that showcases 
   2. Single primary Resume action is maintained in the navigation header as a direct download link, removing duplicate hero resume buttons and removing the "Hire Me" button.
   3. "View Projects" scrolls smoothly to `#projects`.
   4. "Contact Me" scrolls smoothly to `#contact`.
+  5. Hero section maintains clean primary CTAs without redundant inline social icons (which are featured in the dedicated `#contact` section).
 * **Final State**: Target section brought into view.
 
 ### HF-003: Skill Matrix Filtering

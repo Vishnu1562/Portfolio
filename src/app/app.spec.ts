@@ -67,6 +67,12 @@ describe('Vishnu V - Portfolio Application (Behavioral Contract Tests)', () => {
       );
       expect(headerHireMe).toBeUndefined();
     });
+
+    it('should NOT render redundant social icons in the hero section', () => {
+      const heroSection = compiled.querySelector('#about');
+      const heroSocials = heroSection?.querySelectorAll('a[title="GitHub Profile"], a[title="LinkedIn Profile"]');
+      expect(heroSocials?.length).toBe(0);
+    });
   });
 
   describe('HF-003: Skill Matrix & Filtering', () => {
