@@ -35,17 +35,20 @@ Software Developer with **3+ years** of enterprise engineering experience at **E
 
 ## PERSONAL PROJECTS
 
-### **AI Resume Tailor (Chrome Extension)** | [GitHub Repository](https://github.com/Vishnu1562/AI_Resume_Tailor)
+### **AI Resume Tailor (Chrome Extension)**  
+[github.com/Vishnu1562/AI_Resume_Tailor](https://github.com/Vishnu1562/AI_Resume_Tailor)  
 *Tech Stack: TypeScript, Chrome Extension (Manifest V3), Google Gemini Flash API, Groq (Llama 3.3 70B), PDF.js, Vitest*
 * Built a Chrome Side Panel extension (Manifest V3) that extracts job descriptions from job boards like LinkedIn and Greenhouse to compare with an uploaded resume.
 * Integrated Gemini Flash and Groq (Llama 3.3) APIs to tailor resume bullet points and summaries to target roles while keeping original experience authentic, with client-side ATS PDF export.
 
-### **Martial Arts Event Manager Platform** | [GitHub Repository](https://github.com/Vishnu1562)
+### **Martial Arts Event Manager Platform**  
+[github.com/Vishnu1562](https://github.com/Vishnu1562)  
 *Tech Stack: NestJS 11, Angular 21, TypeScript, TypeORM, PostgreSQL, Tailwind CSS*
 * Built a tournament management web application with NestJS, Angular, and PostgreSQL to manage registrations and tournament brackets.
 * Implemented dynamic registration form fields using an EAV schema and set up role-based access control for district, state, and national organizers.
 
-### **Multi-Profile Job Radar (Automated Job Scanner & Digest Bot)** | [Live Portal](https://vishnu1562.github.io/Job_Bot/) &bull; [GitHub](https://github.com/Vishnu1562/Job_Bot)
+### **Multi-Profile Job Radar (Automated Job Scanner & Digest Bot)**  
+[vishnu1562.github.io/Job_Bot](https://vishnu1562.github.io/Job_Bot/) &bull; [github.com/Vishnu1562/Job_Bot](https://github.com/Vishnu1562/Job_Bot)  
 *Tech Stack: Node.js, TypeScript, SQLite, GitHub Actions, Nodemailer / Brevo SMTP, REST APIs*
 * Built an automated script to scrape developer job listings daily based on configured skill profiles and keywords.
 * Stored seen job IDs in an embedded SQLite database to prevent duplicates, scheduled automated daily runs using GitHub Actions, and emailed digest summaries via Nodemailer.
