@@ -179,7 +179,7 @@ A high-performance, responsive single-page portfolio application that showcases 
 * **Expected Results**:
   1. Browser tab displays custom Vishnu V monogram icon (`favicon.svg` and `favicon.ico`) instead of the default Angular framework logo.
   2. Header navigation brand contains the matching custom vector monogram icon.
-  3. Page title accurately reflects `Vishnu V | Consultant 1 @ EY GDS | Full Stack & Platform Engineer`.
+  3. Page title accurately reflects `Vishnu V | Consultant 1 @ EY GDS`.
 * **Final State**: Custom brand identity established across browser tab and header.
 
 ### HF-015: Enterprise Public Sector & Energy Experience in Bio and Experience Summary
